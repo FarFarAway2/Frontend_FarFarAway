@@ -1,0 +1,15 @@
+.box1 {
+  vertical-align: top;
+}
+
+.button1 {
+  border-radius: 5px;
+  background-color: #FF5C00;
+  border: none;
+  min-width: 80px;
+}
+
+.button1:hover {
+  background-color: red;
+}
+
