@@ -1,0 +1,17 @@
+.box1 {
+  font-size: large;
+}
+
+.checkbox1 {
+  margin-right: 10px;
+  scale: 1.1;
+}
+
+.checkbox1:checked {
+  background-color: #ff5c00;
+  border-color: red;
+}
+
+.checkbox1:focus {
+  box-shadow: none;
+}

@@ -4,12 +4,12 @@
 
 .button1 {
   border-radius: 5px;
-  background-color: #FF5C00;
+  background-color: #ff5c00;
   border: none;
   min-width: 80px;
+  font-size: large;
 }
 
 .button1:hover {
   background-color: red;
 }
-
