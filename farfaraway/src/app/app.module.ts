@@ -5,22 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { NavigationOptionsComponent } from './navigation-options/navigation-options.component';
-<<<<<<< Updated upstream
 import { FiltersComponent } from './filters/filters.component';
-=======
 import { SearchOfferComponent } from './search-offer/search-offer.component';
->>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationBarComponent,
     NavigationOptionsComponent,
-<<<<<<< Updated upstream
-    FiltersComponent
-=======
+    FiltersComponent,
     SearchOfferComponent
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
