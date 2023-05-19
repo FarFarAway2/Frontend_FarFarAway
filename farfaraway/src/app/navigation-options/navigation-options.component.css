@@ -1,0 +1,28 @@
+.box1 {
+  padding-top: 20px;
+}
+
+.col1 {
+  margin-bottom: 15px;
+}
+
+.dropdownItem1:hover {
+  background-color: #ffb800;
+}
+
+.dropdownItem1:focus {
+  background-color: #ff5c00;
+}
+
+.button1 {
+  border-radius: 5px;
+  background-color: #ffb800;
+  border: none;
+  width: 100%;
+  color: black;
+  font-size: large;
+}
+
+.button1:hover {
+  background-color: #ff5c00;
+}
