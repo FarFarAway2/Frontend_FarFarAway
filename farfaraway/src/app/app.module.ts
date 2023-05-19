@@ -7,6 +7,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationOptionsComponent } from './navigation-options/navigation-options.component';
 import { FiltersComponent } from './filters/filters.component';
 import { SearchOfferComponent } from './search-offer/search-offer.component';
+import { IndexOffersComponent } from './index-offers/index-offers.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchOfferComponent } from './search-offer/search-offer.component';
     NavigationBarComponent,
     NavigationOptionsComponent,
     FiltersComponent,
-    SearchOfferComponent
+    SearchOfferComponent,
+    IndexOffersComponent
   ],
   imports: [
     BrowserModule,
