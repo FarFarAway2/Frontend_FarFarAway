@@ -1,0 +1,59 @@
+.box1 {
+  margin-top: 100px;
+}
+
+.col1 {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 25px;
+  text-align: start;
+}
+
+h5 {
+  margin-bottom: 15px;
+}
+
+.button1 {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 2px;
+  font-weight: 500;
+  color: white;
+  background-color: #ff5c00;
+  border-color: #ff5c00;
+}
+
+.button1:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.button1:active {
+  color: black;
+  background-color: rgb(169, 0, 0);
+  border-color: rgb(169, 0, 0);
+}
+
+.form1 {
+  border-radius: 2px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+a {
+  color: #ff5c00;
+}
+
+span {
+  font-size: large;
+}

@@ -1,1 +1,107 @@
-<p>edit-offer works!</p>
+<div class="container text-center box1">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-xl-6 col1">
+      <h1>Edit offer</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-xl-6 col1">
+      <!-- FORM -->
+      <form class="was-validated">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput1"
+            placeholder="Name"
+            required
+          />
+          <label class="label1" for="floatingInput1">First Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput2"
+            placeholder="lastname"
+            required
+          />
+          <label class="label2" for="floatingInput2">Last Name</label>
+        </div>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput3"
+            placeholder="birthdate"
+            required
+          />
+          <label class="label1" for="floatingInput3"
+            >Birthdate (DD/MM/YYYY)</label
+          >
+        </div>
+
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput4"
+            placeholder="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <label class="label1" for="floatingInput4">Email</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput2"
+            placeholder="email"
+            pattern="[0-9]{7,15}$"
+            required
+          />
+          <label class="label1" for="floatingInput2">Phone Number</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control form1"
+            id="floatingInput5"
+            placeholder="Contraseña"
+            required
+          />
+          <label class="label1" for="floatingInput5">Password</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control form1"
+            id="passfloatingInput6"
+            placeholder="Confirmación de la contraseña"
+            required
+          />
+          <label class="label1" for="floatingInput6">Confirm password</label>
+        </div>
+        <button class="btn btn-primary button1">Register</button>
+      </form>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-xl-6 col1">
+        <span>
+          Do you have an account? &nbsp;
+          <a href="/login" role="button">Log in here</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-xl-6 col1">
+      <span>Log in with &nbsp;&nbsp;&nbsp;</span>
+      <button class="btn btn-dark button2">
+        <i class="bi bi-google"></i>&nbsp;&nbsp;Gmail
+      </button>
+    </div>
+  </div>
+</div>
