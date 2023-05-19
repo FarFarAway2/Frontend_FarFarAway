@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { CreateOfferComponent } from './create-offer/create-offer.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'createoffer',
     component: CreateOfferComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
   },
 ];
 

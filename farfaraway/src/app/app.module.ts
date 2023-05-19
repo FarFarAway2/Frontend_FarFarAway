@@ -14,6 +14,7 @@ import { CreateOfferComponent } from './create-offer/create-offer.component';
 import { EditOfferComponent } from './edit-offer/edit-offer.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { OfferCardComponent } from './offer-card/offer-card.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { OfferCardComponent } from './offer-card/offer-card.component';
     CreateOfferComponent,
     EditOfferComponent,
     OfferListComponent,
-    OfferCardComponent
+    OfferCardComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
