@@ -7,6 +7,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationOptionsComponent } from './navigation-options/navigation-options.component';
 import { FiltersComponent } from './filters/filters.component';
 import { SearchOfferComponent } from './search-offer/search-offer.component';
+import { OfferPageComponent } from './offer-page/offer-page.component';
+
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
@@ -18,9 +20,12 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     NavigationOptionsComponent,
     FiltersComponent,
     SearchOfferComponent,
+
+    OfferPageComponent
     LoginComponent,
     RegisterComponent,
     DatepickerComponent
+
   ],
   imports: [
     BrowserModule,
