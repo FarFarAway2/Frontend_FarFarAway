@@ -10,6 +10,10 @@ import { SearchOfferComponent } from './search-offer/search-offer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { CreateOfferComponent } from './create-offer/create-offer.component';
+import { EditOfferComponent } from './edit-offer/edit-offer.component';
+import { OfferListComponent } from './offer-list/offer-list.component';
+import { OfferCardComponent } from './offer-card/offer-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     SearchOfferComponent,
     LoginComponent,
     RegisterComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    CreateOfferComponent,
+    EditOfferComponent,
+    OfferListComponent,
+    OfferCardComponent
   ],
   imports: [
     BrowserModule,
