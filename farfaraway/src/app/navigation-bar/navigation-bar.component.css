@@ -13,18 +13,6 @@
   font-size: 25px;
 }
 
-.col1 {
-  margin-bottom: 15px;
-}
-
-.dropdownItem1:hover {
-  background-color: #ffb800;
-}
-
-.dropdownItem1:focus {
-  background-color: #ff5c00;
-}
-
 .buttonLogin {
   border-radius: 5px;
   background-color: #e7d2ae;
