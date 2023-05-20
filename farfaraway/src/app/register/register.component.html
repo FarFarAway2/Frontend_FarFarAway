@@ -31,81 +31,86 @@
       </form>
       <!-- FORM -->
       <form class="was-validated" *ngIf="userType == 1; else company">
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control form1"
-            id="floatingInput1"
-            placeholder="Name"
-            required
-          />
-          <label class="label1" for="floatingInput1">First Name</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control form1"
-            id="floatingInput2"
-            placeholder="lastname"
-            required
-          />
-          <label class="label1" for="floatingInput2">Last Name</label>
-        </div>
-
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control form1"
-            id="floatingInput3"
-            placeholder="birthdate"
-            required
-          />
-          <label class="label1" for="floatingInput3"
-            >Birthdate (DD/MM/YYYY)</label
-          >
-        </div>
-
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control form1"
-            id="floatingInput4"
-            placeholder="email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            required
-          />
-          <label class="label1" for="floatingInput4">Email</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control form1"
-            id="floatingInput2"
-            placeholder="email"
-            pattern="[0-9]{7,15}$"
-            required
-          />
-          <label class="label1" for="floatingInput2">Phone Number</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control form1"
-            id="floatingInput5"
-            placeholder="Contraseña"
-            required
-          />
-          <label class="label1" for="floatingInput5">Password</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control form1"
-            id="passfloatingInput6"
-            placeholder="Confirmación de la contraseña"
-            required
-          />
-          <label class="label1" for="floatingInput6">Confirm password</label>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput1"
+                placeholder="Name"
+                required
+              />
+              <label class="label1" for="floatingInput1">First Name</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput2"
+                placeholder="lastname"
+                required
+              />
+              <label class="label1" for="floatingInput2">Last Name</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form2"
+                id="floatingInput3"
+                placeholder="birthdate"
+                required
+              />
+              <label class="label1" for="floatingInput3"> Birthdate </label>
+              <small>(DD/MM/YYYY)</small>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput4"
+                placeholder="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <label class="label1" for="floatingInput4">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput2"
+                placeholder="email"
+                pattern="[0-9]{7,15}$"
+                required
+              />
+              <label class="label1" for="floatingInput2">Phone Number</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control form1"
+                id="floatingInput5"
+                placeholder="Contraseña"
+                required
+              />
+              <label class="label1" for="floatingInput5">Password</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control form1"
+                id="passfloatingInput6"
+                placeholder="Confirmación de la contraseña"
+                required
+              />
+              <label class="label1" for="floatingInput6">
+                Confirm password
+              </label>
+            </div>
+          </div>
         </div>
         <button class="btn btn-primary button1">Register</button>
       </form>
@@ -130,67 +135,73 @@
 </div>
 <ng-template #company>
   <form class="was-validated">
-    <div class="form-floating">
-      <input
-        type="text"
-        class="form-control form1"
-        id="floatingInput7"
-        placeholder="Name"
-        required
-      />
-      <label class="label1" for="floatingInput7">Company Name</label>
-    </div>
-    <div class="form-floating">
-      <input
-        type="text"
-        class="form-control form1"
-        id="floatingInput2"
-        placeholder="lastname"
-        required
-      />
-      <label class="label1" for="floatingInput2">Company CIF</label>
-    </div>
-    <div class="form-floating">
-      <input
-        type="text"
-        class="form-control form1"
-        id="floatingInput8"
-        placeholder="email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-        required
-      />
-      <label class="label1" for="floatingInput8">Email</label>
-    </div>
-    <div class="form-floating">
-      <input
-        type="text"
-        class="form-control form1"
-        id="floatingInput2"
-        placeholder="email"
-        pattern="[0-9]{7,15}$"
-        required
-      />
-      <label class="label1" for="floatingInput2">Phone Number</label>
-    </div>
-    <div class="form-floating">
-      <input
-        type="password"
-        class="form-control form1"
-        id="floatingInput9"
-        placeholder="Contraseña"
-        required
-      />
-      <label class="label1" for="floatingInput9">Password</label>
-    </div>
-    <div class="form-floating">
-      <input
-        type="password"
-        class="form-control form1"
-        id="passfloatingInput10"
-        placeholder="Confirmación de la contraseña"
-        required
-      />
-      <label class="label1" for="floatingInput10">Confirm password</label>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput7"
+            placeholder="Name"
+            required
+          />
+          <label class="label1" for="floatingInput7">Company Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput2"
+            placeholder="lastname"
+            required
+          />
+          <label class="label1" for="floatingInput2">Company CIF</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput8"
+            placeholder="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+          <label class="label1" for="floatingInput8">Email</label>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput2"
+            placeholder="email"
+            pattern="[0-9]{7,15}$"
+            required
+          />
+          <label class="label1" for="floatingInput2">Phone Number</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control form1"
+            id="floatingInput9"
+            placeholder="Contraseña"
+            required
+          />
+          <label class="label1" for="floatingInput9">Password</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control form1"
+            id="passfloatingInput10"
+            placeholder="Confirmación de la contraseña"
+            required
+          />
+          <label class="label1" for="floatingInput10">Confirm password</label>
+        </div>
+      </div>
     </div>
     <button class="btn btn-primary button1">Register</button>
   </form>
