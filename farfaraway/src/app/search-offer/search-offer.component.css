@@ -1,3 +1,10 @@
+.barra-buscar-oferta {
+  margin-bottom: 40px;
+  height: 200px;
+  background-image: url(../../assets/MedievalBackground.jpg) !important;
+  background-size: 500px;
+  background-repeat: repeat;
+}
 .nav-item{
   padding-bottom: 10px;
 }
@@ -5,13 +12,17 @@
   width: 25%;
   padding-bottom: 20px;
 }
-.dr-offer, .bt-offer{
+.dr-offer {
   width: 100%;
-  background-color: #ffb800;
+  background-color: #ac0006;
 }
-.bt-offer{
-  background-color: #ff5c00;
+.dr-offer:hover {
+  background-color: #770004;
 }
-.bt-offer:hover, .dr-offer:hover {
-  background-color: red;
+.btn-search {
+  background-color: #e7d2ae;
 }
+.btn-search:hover {
+  background-color: #b8a584;
+}
+
