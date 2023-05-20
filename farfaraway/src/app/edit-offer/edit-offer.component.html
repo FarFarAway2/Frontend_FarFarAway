@@ -1,0 +1,180 @@
+<div class="container box1">
+  <div class="row">
+    <div class="col-12 col-md-8 col-xl-6 col1">
+      <h1>Edit offer</h1>
+      <hr />
+    </div>
+  </div>
+  <!-- FORM -->
+  <div class="row justify-content-center">
+    <div class="col-12 col1">
+      <!-- FORM -->
+      <form class="was-validated" *ngIf="offerType == 1; else travel">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-xl-4 col1">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput1"
+                placeholder="title"
+                required
+              />
+              <label class="label1" for="floatingInput1">Title</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput2"
+                placeholder="hotelname"
+                required
+              />
+              <label class="label1" for="floatingInput2">Hotel Name</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form1"
+                id="floatingInput3"
+                placeholder="price"
+                required
+              />
+              <label class="label1" for="floatingInput3">Price</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control form2"
+                id="floatingInput2"
+                placeholder="description"
+                required
+                rows="8"
+              ></textarea>
+              <label class="label1" for="floatingInput2">Description</label>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-xl-4 col1">
+            <select class="form-select form4">
+              <option selected disabled >Rating&nbsp;&nbsp;(select one)</option>
+              <option value="5">5 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="2">2 Stars</option>
+              <option value="1">1 Star</option>
+            </select>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control form3"
+                id="floatingInput3"
+                placeholder="expiredate"
+                required
+              />
+              <label class="label1" for="floatingInput3"> Expire Date </label>
+              <small id="floatingInput3" class="help-text1">
+                (DD/MM/YYYY)
+              </small>
+            </div>
+            <br />
+            <span>Image:</span>
+            <button class="btn btn-primary button2">Select image</button>
+          </div>
+          <div class="col-12 col-md-8 col-xl-4 col1">
+            <span>Location:</span>
+            <img
+              class="image1"
+              src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/02/google-maps-2961754.jpg?tf=3840x"
+              alt=""
+            />
+            <p>(placeholder map)</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button class="btn btn-primary button1">Edit offer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<ng-template #travel>
+  <form class="was-validated">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-xl-4 col1">
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput1"
+            placeholder="title"
+            required
+          />
+          <label class="label1" for="floatingInput1">Title</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput2"
+            placeholder="travelname"
+            required
+          />
+          <label class="label1" for="floatingInput2">Travel Name</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form1"
+            id="floatingInput3"
+            placeholder="price"
+            required
+          />
+          <label class="label1" for="floatingInput3">Price</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control form2"
+            id="floatingInput2"
+            placeholder="description"
+            required
+            rows="8"
+          ></textarea>
+          <label class="label1" for="floatingInput2">Description</label>
+        </div>
+      </div>
+      <div class="col-12 col-md-8 col-xl-4 col1">
+        <select class="form-select form4">
+          <option selected disabled>Transport&nbsp;&nbsp;(select one)</option>
+          <option value="1">Train</option>
+          <option value="2">Plane</option>
+          <option value="3">Boat</option>
+          <option value="4">Bus</option>
+        </select>
+        <select class="form-select form4">
+          <option selected disabled>Travel Type&nbsp;&nbsp;(select one)</option>
+          <option value="1">Medieval</option>
+          <option value="2">Western</option>
+          <option value="3">Victorian</option>
+          <option value="4">Futuristic</option>
+          <option value="5">Geek</option>
+        </select>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control form3"
+            id="floatingInput3"
+            placeholder="expiredate"
+            required
+          />
+          <label class="label1" for="floatingInput3"> Expire Date </label>
+          <small id="floatingInput3" class="help-text1"> (DD/MM/YYYY) </small>
+        </div>
+        <br />
+        <span>Image:</span>
+        <button class="btn btn-primary button2">Select image</button>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <button class="btn btn-primary button1">Edit offer</button>
+    </div>
+  </form>
+</ng-template>

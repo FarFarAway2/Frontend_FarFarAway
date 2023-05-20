@@ -10,6 +10,5 @@ export class RegisterComponent {
 
   onChange(ev:any) {
     this.userType = ev.target.value;
-    console.log(this.userType);
   }
 }

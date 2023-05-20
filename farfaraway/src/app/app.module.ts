@@ -10,6 +10,10 @@ import { OfferPageComponent } from './offer-page/offer-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { CreateOfferComponent } from './create-offer/create-offer.component';
+import { EditOfferComponent } from './edit-offer/edit-offer.component';
+import { OfferListComponent } from './offer-list/offer-list.component';
+import { OfferCardComponent } from './offer-card/offer-card.component';
 import { MapsComponent } from './maps/maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
@@ -26,6 +30,10 @@ import { AboutComponent } from './about/about.component';
     LoginComponent,
     RegisterComponent,
     DatepickerComponent,
+    CreateOfferComponent,
+    EditOfferComponent,
+    OfferListComponent,
+    OfferCardComponent
     MapsComponent,
     AboutComponent
   ],
