@@ -3,6 +3,16 @@
   padding-top: 20px;
 }
 
+@font-face {
+  font-family: Abibas;
+  src: url(../../assets/Abibas.ttf);
+}
+
+.nav-item {
+  font-family: Abibas;
+  font-size: 25px;
+}
+
 .col1 {
   margin-bottom: 15px;
 }
@@ -15,15 +25,22 @@
   background-color: #ff5c00;
 }
 
-.button1 {
+.buttonLogin {
   border-radius: 5px;
-  background-color: #ffb800;
+  background-color: #e7d2ae;
   border: none;
   width: 100%;
   color: black;
   font-size: large;
+  margin-right: 30px;
 }
 
-.button1:hover {
-  background-color: #ff5c00;
+.buttonLogin:hover {
+  background-color: #b8a584;
 }
+
+.navbar-brand img {
+  height: 100px;
+  margin-left: 15px;
+}
+

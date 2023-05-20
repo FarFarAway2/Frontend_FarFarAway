@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import { NavigationOptionsComponent } from './navigation-options/navigation-options.component';
 import { FiltersComponent } from './filters/filters.component';
 import { SearchOfferComponent } from './search-offer/search-offer.component';
 import { IndexOffersComponent } from './index-offers/index-offers.component';
@@ -16,7 +15,6 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    NavigationOptionsComponent,
     FiltersComponent,
     SearchOfferComponent,
     IndexOffersComponent,
