@@ -10,6 +10,10 @@ import { OfferPageComponent } from './offer-page/offer-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
+import { MapsComponent } from './maps/maps.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +25,14 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
     OfferPageComponent,
     LoginComponent,
     RegisterComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    MapsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMapsModule
 
   ],
   providers: [],
