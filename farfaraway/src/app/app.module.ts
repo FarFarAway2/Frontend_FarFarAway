@@ -6,6 +6,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { NavigationOptionsComponent } from './navigation-options/navigation-options.component';
 import { FiltersComponent } from './filters/filters.component';
 import { SearchOfferComponent } from './search-offer/search-offer.component';
+import { IndexOffersComponent } from './index-offers/index-offers.component';
 import { OfferPageComponent } from './offer-page/offer-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -22,6 +23,7 @@ import { AboutComponent } from './about/about.component';
     NavigationOptionsComponent,
     FiltersComponent,
     SearchOfferComponent,
+    IndexOffersComponent,
     OfferPageComponent,
     LoginComponent,
     RegisterComponent,

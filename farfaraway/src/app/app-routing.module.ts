@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MapsComponent } from './maps/maps.component';
 import { AboutComponent } from './about/about.component';
+import { IndexOffersComponent } from './index-offers/index-offers.component';
 
 const routes: Routes = [
   {
@@ -17,16 +18,20 @@ const routes: Routes = [
   },
   {
     path: 'offer-page',
-    component: OfferPageComponent
+    component: OfferPageComponent,
   },
   {
     path: 'maps',
-    component: MapsComponent
+    component: MapsComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
-  }
+    component: AboutComponent,
+  },
+  {
+    path: '',
+    component: IndexOffersComponent,
+  },
 ];
 
 @NgModule({
