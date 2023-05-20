@@ -33,7 +33,7 @@ import { AboutComponent } from './about/about.component';
     CreateOfferComponent,
     EditOfferComponent,
     OfferListComponent,
-    OfferCardComponent
+    OfferCardComponent,
     MapsComponent,
     AboutComponent
   ],
