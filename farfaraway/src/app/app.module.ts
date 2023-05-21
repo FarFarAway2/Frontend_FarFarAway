@@ -17,6 +17,7 @@ import { OfferCardComponent } from './offer-card/offer-card.component';
 import { MapsComponent } from './maps/maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
+import { OfferCardMapComponent } from './offer-card-map/offer-card-map.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
     OfferListComponent,
     OfferCardComponent,
     MapsComponent,
-    AboutComponent
+    AboutComponent,
+    OfferCardMapComponent
   ],
   imports: [
     BrowserModule,

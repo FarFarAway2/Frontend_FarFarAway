@@ -1,5 +1,12 @@
 <div class="container">
+  <app-filters></app-filters>
   <!-- <a type="button" class="btn btn-primary">Primary</a> -->
   <!-- <a class="btn btn-primary button1" href="/maps" role="button">Maps</a> -->
-  <google-map [center]="center" [zoom]="zoom"></google-map>
+  <google-map [center]="center" [zoom]="zoom" class="maps"></google-map>
+  <div class="col-12">
+    <app-offer-card-map></app-offer-card-map>
+    <app-offer-card-map></app-offer-card-map>
+    <app-offer-card-map></app-offer-card-map>
+    <app-offer-card-map></app-offer-card-map>
+  </div>
 </div>
