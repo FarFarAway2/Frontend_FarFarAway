@@ -18,34 +18,34 @@ import { MapsComponent } from './maps/maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
 import { OfferCardMapComponent } from './offer-card-map/offer-card-map.component';
-
+import { DatepickerRangePopupComponent } from "./datepicker-range-popup/datepicker-range-popup.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavigationBarComponent,
-    FiltersComponent,
-    SearchOfferComponent,
-    IndexOffersComponent,
-    OfferPageComponent,
-    LoginComponent,
-    RegisterComponent,
-    DatepickerComponent,
-    CreateOfferComponent,
-    EditOfferComponent,
-    OfferListComponent,
-    OfferCardComponent,
-    MapsComponent,
-    AboutComponent,
-    OfferCardMapComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    GoogleMapsModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavigationBarComponent,
+        FiltersComponent,
+        SearchOfferComponent,
+        IndexOffersComponent,
+        OfferPageComponent,
+        LoginComponent,
+        RegisterComponent,
+        DatepickerComponent,
+        CreateOfferComponent,
+        EditOfferComponent,
+        OfferListComponent,
+        OfferCardComponent,
+        MapsComponent,
+        AboutComponent,
+        OfferCardMapComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        GoogleMapsModule,
+        DatepickerRangePopupComponent
+    ]
 })
 export class AppModule { }

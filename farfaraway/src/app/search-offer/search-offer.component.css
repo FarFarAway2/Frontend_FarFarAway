@@ -26,3 +26,29 @@
   background-color: #b8a584;
 }
 
+/* ------------- */
+
+.btn, .form-control {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.btn:focus, .btn:active, .form-control:focus, .form-control:active {
+    outline: none;
+}
+
+.form-control {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  height: 50px;
+  border-width: 2px; }
+
+  .form-control:active, .form-control:focus {
+    border-color: #ac0006;
+  }
+
+textarea.form-control {
+  height: inherit;
+}
+
