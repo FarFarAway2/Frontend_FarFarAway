@@ -11,3 +11,8 @@
   margin: 0px !important;
   margin-top: 20px !important;
 }
+google-map /deep/ .map-container {
+  border-radius: 5px;
+  height: 86vh !important;
+  width: 50vw !important;
+}

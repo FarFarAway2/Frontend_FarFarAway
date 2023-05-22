@@ -1,16 +1,21 @@
 <div class="container-fluid">
-  <div class="row g-0">
-    <div class="col-md-3">
+    <div class="col-3">
       <app-filters class="filters"></app-filters>
     </div>
-    <div class="col-md-6">
-      <google-map [center]="center" [zoom]="zoom" class="maps"></google-map>
+
+    <div class="col">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <google-map [center]="center" [zoom]="zoom" class="maps"></google-map>
+          </div>
+          <div class="col-6">
+            <app-offer-card-map></app-offer-card-map>
+            <app-offer-card-map></app-offer-card-map>
+            <app-offer-card-map></app-offer-card-map>
+            <app-offer-card-map></app-offer-card-map>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-3">
-      <app-offer-card-map></app-offer-card-map>
-      <app-offer-card-map></app-offer-card-map>
-      <app-offer-card-map></app-offer-card-map>
-      <app-offer-card-map></app-offer-card-map>
-    </div>
-  </div>
 </div>
