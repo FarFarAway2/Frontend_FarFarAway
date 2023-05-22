@@ -19,6 +19,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
 import { OfferCardMapComponent } from './offer-card-map/offer-card-map.component';
 import { DatepickerRangePopupComponent } from "./datepicker-range-popup/datepicker-range-popup.component";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -38,6 +39,7 @@ import { DatepickerRangePopupComponent } from "./datepicker-range-popup/datepick
         MapsComponent,
         AboutComponent,
         OfferCardMapComponent,
+        FooterComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

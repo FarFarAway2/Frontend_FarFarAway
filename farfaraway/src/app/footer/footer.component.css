@@ -1,0 +1,20 @@
+.footer {
+  margin-top: 15vh;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 40px;
+  background-color: #600909;
+
+}
+.text {
+  color: aliceblue;
+  text-align: center;
+}
+
+.web {
+  text-align: right;
+  padding-left: 50px;
+  color: aliceblue;
+}

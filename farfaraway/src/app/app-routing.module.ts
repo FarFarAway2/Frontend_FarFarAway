@@ -9,6 +9,7 @@ import { EditOfferComponent } from './edit-offer/edit-offer.component';
 import { MapsComponent } from './maps/maps.component';
 import { AboutComponent } from './about/about.component';
 import { IndexOffersComponent } from './index-offers/index-offers.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: '',
     component: IndexOffersComponent,
+  },
+  {
+    path:'footer',
+    component: FooterComponent,
   },
 ];
 
