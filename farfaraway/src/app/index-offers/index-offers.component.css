@@ -21,9 +21,11 @@ google-map {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   margin-right: 10px;
   margin-bottom: 20px;
+
 }
 
 .img-offer {
@@ -57,3 +59,7 @@ google-map {
 .btn-primary:hover {
   background-color: #770004;
 }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
