@@ -8,7 +8,7 @@ import {FormControl} from '@angular/forms';
 })
 export class FiltersComponent {
   themes = new FormControl('');
-  themesList: string[] = ['Medieval', 'Western', 'Victorian', 'Futuristic', 'geek'];
+  themesList: string[] = ['Medieval', 'Western', 'Victorian', 'Futuristic', 'Geek'];
 
   specialDates = new FormControl('');
   specialDatesList: string[] = ['Easter', 'Saint Johns Eve', 'Summer Holidays', 'Christmas'];
