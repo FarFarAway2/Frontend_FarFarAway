@@ -1,10 +1,4 @@
 <div class="container box1 shadow p-3 mb-5 bg-body rounded">
-  <div class="row">
-    <div class="col">
-      <h4><strong>Filters</strong></h4>
-    </div>
-  </div>
-  <hr />
   <!-- RATING -->
   <div class="row">
     <div class="btn-group-vertical">
@@ -77,156 +71,57 @@
     </div>
   </div>
   <hr />
+
+  <!-- PRICE -->
+  <div class="row g-2">
+    <h5>Price:</h5>
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInputGrid" placeholder="EUR" value="">
+        <label for="floatingInputGrid">From</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInputGrid" placeholder="EUR" value="">
+        <label for="floatingInputGrid">To</label>
+      </div>
+    </div>
+  </div>
+  <hr />
+
   <!-- THEMES -->
   <div class="row">
-    <div class="btn-group-vertical">
-      <h5>Themes:</h5>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="medieval"
-        />
-        <label class="form-check-label" for="medieval"> Medieval </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="western"
-        />
-        <label class="form-check-label" for="western"> Western </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="victorian"
-        />
-        <label class="form-check-label" for="victorian"> Victorian </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="futuristic"
-        />
-        <label class="form-check-label" for="futuristic"> Futuristic </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="geek"
-        />
-        <label class="form-check-label" for="geek"> Geek </label>
-      </div>
+    <h5>Themes:</h5>
+    <div class="mat-typography mat-app-background">
+      <mat-form-field>
+        <mat-label>Themes</mat-label>
+        <mat-select [formControl]="themes" multiple>
+          <mat-option *ngFor="let theme of themesList" [value]="theme">{{theme}}</mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
   </div>
   <hr />
+
   <!-- SPECIAL DATES -->
   <div class="row">
-    <div class="btn-group-vertical">
       <h5>Special Dates:</h5>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="easter"
-        />
-        <label class="form-check-label" for="easter"> Easter </label>
+      <div class="mat-typography mat-app-background">
+        <mat-form-field>
+          <mat-label>Special Dates</mat-label>
+          <mat-select [formControl]="specialDates" multiple>
+            <mat-option *ngFor="let specialDate of specialDatesList" [value]="specialDate">{{specialDate}}</mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="saintjohneve"
-        />
-        <label class="form-check-label" for="saintjohneve">
-          Saint John's Eve
-        </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="summerholidays"
-        />
-        <label class="form-check-label" for="summerholidays">
-          Summer Holidays
-        </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="christmas"
-        />
-        <label class="form-check-label" for="christmas"> Christmas </label>
-      </div>
-    </div>
   </div>
   <hr />
-  <!-- PRICE -->
+
+  <!-- SPECIAL OFFERS -->
   <div class="row">
     <div class="btn-group-vertical">
-      <h5>Price:</h5>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="+100"
-        />
-        <label class="form-check-label" for="+100"> more than 100€ </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="75-100"
-        />
-        <label class="form-check-label" for="75-100"> 75€ to 100€ </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="50-75"
-        />
-        <label class="form-check-label" for="50-75"> 50€ to 75€ </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input checkbox1" type="checkbox" id="25-50" />
-        <label class="form-check-label" for="25-50"> 25€ to 50€ </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input checkbox1"
-          value=""
-          type="checkbox"
-          id="-25"
-        />
-        <label class="form-check-label" for="-25"> less than 25€ </label>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <!-- SPECIAL CONDITIONS -->
-  <div class="row">
-    <div class="btn-group-vertical">
-      <h5>Special conditions:</h5>
+      <h5>Special offers:</h5>
       <div class="form-check">
         <input
           class="form-check-input checkbox1"

@@ -13,13 +13,21 @@ import { DatepickerComponent } from './datepicker/datepicker.component';
 import { CreateOfferComponent } from './create-offer/create-offer.component';
 import { EditOfferComponent } from './edit-offer/edit-offer.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
-import { OfferCardComponent } from './offer-card/offer-card.component';
+import { OfferCardAdminComponent } from './offer-card-admin/offer-card-admin.component';
 import { MapsComponent } from './maps/maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
-import { OfferCardMapComponent } from './offer-card-map/offer-card-map.component';
+import { OfferCardComponent } from './offer-card/offer-card.component';
 import { DatepickerRangePopupComponent } from "./datepicker-range-popup/datepicker-range-popup.component";
 import { FooterComponent } from './footer/footer.component';
+import { CountdownModule } from 'ngx-countdown';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './../material.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatNativeDateModule} from '@angular/material/core';
+import {HttpClientModule} from '@angular/common/http';
+
+
 
 @NgModule({
     declarations: [
@@ -35,10 +43,10 @@ import { FooterComponent } from './footer/footer.component';
         CreateOfferComponent,
         EditOfferComponent,
         OfferListComponent,
-        OfferCardComponent,
+        OfferCardAdminComponent,
         MapsComponent,
         AboutComponent,
-        OfferCardMapComponent,
+        OfferCardComponent,
         FooterComponent,
     ],
     providers: [],
@@ -47,7 +55,14 @@ import { FooterComponent } from './footer/footer.component';
         BrowserModule,
         AppRoutingModule,
         GoogleMapsModule,
-        DatepickerRangePopupComponent
+        DatepickerRangePopupComponent,
+        CountdownModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MaterialModule,
+        BrowserAnimationsModule,
+        MatNativeDateModule,
+        HttpClientModule,
     ]
 })
 export class AppModule { }

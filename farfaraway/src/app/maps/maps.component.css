@@ -13,6 +13,6 @@
 }
 google-map /deep/ .map-container {
   border-radius: 5px;
-  height: 50% !important;
-  width: 125% !important;
+  height: 100% !important;
+  width: 100% !important;
 }

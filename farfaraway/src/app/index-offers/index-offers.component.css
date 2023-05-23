@@ -12,8 +12,8 @@
 
 google-map /deep/ .map-container {
   border-radius: 5px;
-  height: 250px !important;
-  width: 250px !important;
+  height: 350px !important;
+  width: 200px !important;
 }
 
 google-map {
@@ -25,12 +25,25 @@ google-map {
   height: 100vh;
   margin-right: 10px;
   margin-bottom: 20px;
-
 }
 
 .img-offer {
   overflow:hidden;
   border-radius: 5px 5px 0px 0px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background-color: #ac0006;
+  padding: 0px 5px 0px 5px;
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
 
 .card-img-top {
@@ -59,6 +72,7 @@ google-map {
 .btn-primary:hover {
   background-color: #770004;
 }
+
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
