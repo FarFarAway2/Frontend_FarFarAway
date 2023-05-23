@@ -1,6 +1,5 @@
 .footer {
-  margin-top: 15vh;
-  /* position: fixed; */
+  margin-top: 25vh;
   bottom: 0;
   width: 100%;
   left: 0;
@@ -9,15 +8,13 @@
 
 }
 .text {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   text-align: center;
+  font-size: 18px;
 }
 
-.web {
-  text-align: right;
-  padding-left: 50px;
-  color: aliceblue;
-}
 .col1{
   text-align: center;
 }
+
+
