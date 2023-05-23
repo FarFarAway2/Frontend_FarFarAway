@@ -9,7 +9,6 @@ import { IndexOffersComponent } from './index-offers/index-offers.component';
 import { OfferPageComponent } from './offer-page/offer-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { DatepickerComponent } from './datepicker/datepicker.component';
 import { CreateOfferComponent } from './create-offer/create-offer.component';
 import { EditOfferComponent } from './edit-offer/edit-offer.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
@@ -18,7 +17,6 @@ import { MapsComponent } from './maps/maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
 import { OfferCardComponent } from './offer-card/offer-card.component';
-import { DatepickerRangePopupComponent } from "./datepicker-range-popup/datepicker-range-popup.component";
 import { FooterComponent } from './footer/footer.component';
 import { CountdownModule } from 'ngx-countdown';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -26,6 +24,7 @@ import { MaterialModule } from './../material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
+import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 
 
 
@@ -39,7 +38,6 @@ import {HttpClientModule} from '@angular/common/http';
         OfferPageComponent,
         LoginComponent,
         RegisterComponent,
-        DatepickerComponent,
         CreateOfferComponent,
         EditOfferComponent,
         OfferListComponent,
@@ -55,7 +53,6 @@ import {HttpClientModule} from '@angular/common/http';
         BrowserModule,
         AppRoutingModule,
         GoogleMapsModule,
-        DatepickerRangePopupComponent,
         CountdownModule,
         FormsModule,
         ReactiveFormsModule,
@@ -63,6 +60,7 @@ import {HttpClientModule} from '@angular/common/http';
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
+        DateRangePickerComponent,
     ]
 })
 export class AppModule { }
