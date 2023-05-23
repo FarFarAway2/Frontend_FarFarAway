@@ -1,6 +1,7 @@
 .box1 {
   margin-bottom: 10px;
   width: 620px;
+  width: 50%;
   border: 1px solid rgb(0, 0, 0);
   padding-top: 30px;
 }
