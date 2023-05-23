@@ -1,18 +1,13 @@
 .box1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid black;
-  padding-top: 30px;
+  width: 550px;
 }
 
 .col1 {
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-bottom: 40px;
-  text-align: left;
+  width: fit-content;
+  padding: 0px;
 }
 
-.button1 {
+/*.button1 {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
@@ -34,28 +29,58 @@
   border-color: #168734;
 }
 
-.button2 {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 2px;
-  font-weight: 500;
-  color: white;
-  background-color: red;
-  border-color: red;
-}
-
-.button2:hover {
-  background-color: rgb(196, 0, 0);
-  border-color: rgb(196, 0, 0);
-}
-
-.button2:active {
-  color: black;
-  background-color: rgb(169, 0, 0);
-  border-color: rgb(169, 0, 0);
-}
-
 .image1 {
   height: 200px;
+}*/
+
+.img-offer {
+  overflow:hidden;
+  border-radius: 5px 5px 0px 0px;
 }
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background-color: #ac0006;
+  padding: 0px 5px 0px 5px;
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.card-img-top {
+  -webkit-transition:all .4s linear;
+  transition:all .4s linear;
+
+}
+
+.card:hover img {
+  -ms-transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+.col-4 {
+  margin: auto;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #ac0006;
+  padding: 15px;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #770004;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
