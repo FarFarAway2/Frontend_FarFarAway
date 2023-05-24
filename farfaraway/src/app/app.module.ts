@@ -24,13 +24,9 @@ import { MaterialModule } from './../material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
-<<<<<<< HEAD
 import {SocialLoginModule,SocialAuthServiceConfig,} from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
-=======
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
-
->>>>>>> f74803bf31ab64782bd9e684fb275c5fa3c8c933
 
 
 @NgModule({
@@ -79,11 +75,8 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
-<<<<<<< HEAD
         SocialLoginModule,
-=======
         DateRangePickerComponent,
->>>>>>> f74803bf31ab64782bd9e684fb275c5fa3c8c933
     ]
 })
 export class AppModule { }
