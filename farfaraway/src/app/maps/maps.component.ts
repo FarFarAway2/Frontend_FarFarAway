@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class MapsComponent {
   zoom = 12;
   center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
+
+  handleClick(event: google.maps.MapMouseEvent) {
+    console.log(`Las coordenadas son: ${event.latLng?.lat()}, ${event.latLng?.lng()}`);
+  }
 }
