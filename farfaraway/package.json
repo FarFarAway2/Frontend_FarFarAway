@@ -24,6 +24,8 @@
     "@angular/router": "^16.0.0",
     "@ng-bootstrap/ng-bootstrap": "^14.1.1",
     "@popperjs/core": "^2.11.7",
+    "@types/gapi.auth2": "^0.0.57",
+    "angularx-social-login": "^4.1.0",
     "ng-multiselect-dropdown": "^0.3.9",
     "ngx-countdown": "^15.0.0",
     "ngx-google-maps": "^0.0.1",

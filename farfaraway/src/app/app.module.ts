@@ -26,7 +26,8 @@ import { MaterialModule } from './../material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
-
+import {SocialLoginModule,SocialAuthServiceConfig,} from 'angularx-social-login';
+import { GoogleLoginProvider } from 'angularx-social-login';
 
 
 @NgModule({
@@ -49,7 +50,21 @@ import {HttpClientModule} from '@angular/common/http';
         OfferCardComponent,
         FooterComponent,
     ],
-    providers: [],
+    providers:
+    [
+      {
+        provide: 'SocialAuthServiceConfig',
+        useValue: {
+          autoLogin: false,
+          providers: [
+            {
+              id: GoogleLoginProvider.PROVIDER_ID,
+              provider: new GoogleLoginProvider('58888682431-d8ni2f5tqf6123qpnl752atjgubgfeu6.apps.googleusercontent.com'),
+            },
+          ],
+        } as SocialAuthServiceConfig,
+      },
+    ],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
@@ -63,6 +78,7 @@ import {HttpClientModule} from '@angular/common/http';
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
+        SocialLoginModule,
     ]
 })
 export class AppModule { }
