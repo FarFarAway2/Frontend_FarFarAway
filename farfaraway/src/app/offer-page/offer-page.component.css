@@ -26,30 +26,32 @@
   width: 100%;
 }
 
-.center {
-  border-radius: 2px;
+.btn-calendar date-range-picker /deep/ .mat-mdc-form-field {
+ width: 20vh;
+ /* border: 2px solid grey;
+ border-radius: 10px; */
 }
 
-.row {
-  margin-top: 20px;
-}
+  .btn-group {
+    margin-top: 20px;
+  }
+  .btn-increment increment-input /deep/ .mat-mdc-form-field {
+    width: 10vh;
+    /* height: 10vh; */
+   }
 
-.lower {
-  margin-top: 50px;
-}
+  .btn-bookit {
+    font-size: 18px;
+    border: 1px solid rgb(255, 92, 0);
+    width: 10vh;
+    height: 4vh;
+  }
 
-.btn-lower {
-  font-size: 18px;
-  border: 1px solid rgb(255, 92, 0);
-  margin: 20px;
-  width: 20vh;
-}
+  .btn:hover {
+    color: rgb(255, 92, 0);
+  }
 
-.btn:hover {
-  color: rgb(255, 92, 0);
-}
-
-.list-group-item {
-  background-color: transparent;
-  border: 1px solid rgb(149, 149, 149);
-}
+  .list-group-item {
+    background-color: transparent;
+    border: 1px solid rgb(149, 149, 149);
+  }
