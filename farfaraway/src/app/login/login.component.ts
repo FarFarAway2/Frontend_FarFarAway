@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import {
-  SocialAuthService,
-  GoogleLoginProvider,
-  SocialUser,
-} from 'angularx-social-login';
+//import {
+//  SocialAuthService,
+//  GoogleLoginProvider,
+//  SocialUser,
+//} from 'angularx-social-login';
 
 
 @Component({
@@ -13,6 +13,7 @@ import {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+/*
   loginForm!: FormGroup;
   socialUser!: SocialUser;
   isLoggedin?: boolean;
@@ -38,5 +39,6 @@ export class LoginComponent {
   logOut(): void {
     this.socialAuthService.signOut();
   }
+*/
 
 }
