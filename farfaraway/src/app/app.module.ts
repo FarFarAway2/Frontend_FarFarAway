@@ -24,8 +24,8 @@ import { MaterialModule } from './../material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
-import {SocialLoginModule,SocialAuthServiceConfig,} from 'angularx-social-login';
-import { GoogleLoginProvider } from 'angularx-social-login';
+//import {SocialLoginModule,SocialAuthServiceConfig,} from 'angularx-social-login';
+//import { GoogleLoginProvider } from 'angularx-social-login';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 
 
@@ -50,7 +50,7 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
     ],
     providers:
     [
-      {
+      /*{
         provide: 'SocialAuthServiceConfig',
         useValue: {
           autoLogin: false,
@@ -62,6 +62,7 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
           ],
         } as SocialAuthServiceConfig,
       },
+*/
     ],
     bootstrap: [AppComponent],
     imports: [
@@ -75,7 +76,7 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
-        SocialLoginModule,
+        //SocialLoginModule,
         DateRangePickerComponent,
     ]
 })
