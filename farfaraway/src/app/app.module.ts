@@ -50,19 +50,18 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
     ],
     providers:
     [
-      /*{
-        provide: 'SocialAuthServiceConfig',
-        useValue: {
-          autoLogin: false,
-          providers: [
-            {
-              id: GoogleLoginProvider.PROVIDER_ID,
-              provider: new GoogleLoginProvider('58888682431-d8ni2f5tqf6123qpnl752atjgubgfeu6.apps.googleusercontent.com'),
-            },
-          ],
-        } as SocialAuthServiceConfig,
-      },
-*/
+     // {
+     //   provide: 'SocialAuthServiceConfig',
+     //   useValue: {
+     //     autoLogin: false,
+     //     providers: [
+     //       {
+     //         id: GoogleLoginProvider.PROVIDER_ID,
+     //         provider: new GoogleLoginProvider('58888682431-d8ni2f5tqf6123qpnl752atjgubgfeu6.apps.googleusercontent.com'),
+     //       },
+     //     ],
+     //   } as SocialAuthServiceConfig,
+     // },
     ],
     bootstrap: [AppComponent],
     imports: [
