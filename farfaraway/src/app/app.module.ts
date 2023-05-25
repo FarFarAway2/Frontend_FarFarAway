@@ -24,9 +24,10 @@ import { MaterialModule } from './../material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
-//import {SocialLoginModule,SocialAuthServiceConfig,} from 'angularx-social-login';
-//import { GoogleLoginProvider } from 'angularx-social-login';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
+import { IncrementInputComponent } from './increment-input/increment-input.component';
+// import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 
 @NgModule({
@@ -47,22 +48,9 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
         AboutComponent,
         OfferCardComponent,
         FooterComponent,
+        IncrementInputComponent,
     ],
-    providers:
-    [
-     // {
-     //   provide: 'SocialAuthServiceConfig',
-     //   useValue: {
-     //     autoLogin: false,
-     //     providers: [
-     //       {
-     //         id: GoogleLoginProvider.PROVIDER_ID,
-     //         provider: new GoogleLoginProvider('58888682431-d8ni2f5tqf6123qpnl752atjgubgfeu6.apps.googleusercontent.com'),
-     //       },
-     //     ],
-     //   } as SocialAuthServiceConfig,
-     // },
-    ],
+    providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
@@ -75,8 +63,8 @@ import { DateRangePickerComponent } from './date-range-picker/date-range-picker.
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
-        //SocialLoginModule,
         DateRangePickerComponent,
+        // MDBBootstrapModule.forRoot(),
     ]
 })
 export class AppModule { }
