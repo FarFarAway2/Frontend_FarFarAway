@@ -1,21 +1,23 @@
 <div class="container-fluid">
-    <div class="col-3">
-      <app-filters class="filters"></app-filters>
-    </div>
+  <div class="col-3">
+    <app-filters class="filters"></app-filters>
+  </div>
 
-    <div class="col">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-6">
-            <google-map [center]="center" [zoom]="zoom" class="maps" (mapClick)="handleClick($event)"></google-map>
-          </div>
-          <div class="col-6">
-            <app-offer-card></app-offer-card>
-            <app-offer-card></app-offer-card>
-            <app-offer-card></app-offer-card>
-            <app-offer-card></app-offer-card>
-          </div>
+  <div class="col">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <google-map [center]="center" [zoom]="zoom" class="maps" (mapClick)="handleClick($event)">
+            <map-marker *ngFor="let marker of markers" [position]="marker"></map-marker>
+          </google-map>
+        </div>
+        <div class="col-6">
+          <app-offer-card></app-offer-card>
+          <app-offer-card></app-offer-card>
+          <app-offer-card></app-offer-card>
+          <app-offer-card></app-offer-card>
         </div>
       </div>
     </div>
+  </div>
 </div>
