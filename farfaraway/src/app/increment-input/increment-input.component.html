@@ -1,21 +1,55 @@
-<mat-form-field>
-  <button
-    mat-icon-button
-    matPrefix
-    aria-label="Remove"
-    [color]="getColor()"
-    (click)="incrementValue(-_step)"
-    [disabled]="shouldDisableDecrement(_value)">
-    <mat-icon>remove</mat-icon>
-  </button>
-  <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />
-  <button
-    mat-icon-button
-    matSuffix
-    aria-label="Add"
-    [color]="getColor()"
-    (click)="incrementValue(_step)"
-    [disabled]="shouldDisableIncrement(_value)">
-    <mat-icon>add</mat-icon>
-  </button>
-</mat-form-field>
+<div class="container">
+  <div class="row gx-2 justify-content-center">
+
+    <div class="col-md-6">
+      <mat-form-field>
+        <mat-label>Adults</mat-label>
+        <button
+          mat-icon-button
+          matPrefix
+          aria-label="Remove"
+          [color]="getColor()"
+          (click)="incrementValue(-_step)"
+          [disabled]="shouldDisableDecrement(_value)">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />
+        <button
+          mat-icon-button
+          matSuffix
+          aria-label="Add"
+          [color]="getColor()"
+          (click)="incrementValue(_step)"
+          [disabled]="shouldDisableIncrement(_value)">
+          <mat-icon>add</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-6">
+      <mat-form-field>
+        <mat-label>Children</mat-label>
+        <button
+          mat-icon-button
+          matPrefix
+          aria-label="Remove"
+          [color]="getColor()"
+          (click)="incrementValue(-_step)"
+          [disabled]="shouldDisableDecrement(_value)">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />
+        <button
+          mat-icon-button
+          matSuffix
+          aria-label="Add"
+          [color]="getColor()"
+          (click)="incrementValue(_step)"
+          [disabled]="shouldDisableIncrement(_value)">
+          <mat-icon>add</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+  </div>
+</div>
