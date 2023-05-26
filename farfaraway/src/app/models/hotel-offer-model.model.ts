@@ -1,4 +1,5 @@
 export class HotelOfferModel {
-  id_hotel?: number;
   hotel_name?: string;
+  price?: number;
+  hotel_description?: string;
 }

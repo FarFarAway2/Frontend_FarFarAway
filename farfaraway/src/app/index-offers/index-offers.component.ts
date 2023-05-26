@@ -11,8 +11,10 @@ export class IndexOffersComponent implements OnInit{
   zoom = 12;
   center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
 
-  // hotelOffers?: HotelOfferModel[];
-  hotelOffers:any;
+  hotelOffers: HotelOfferModel[] = [];
+  name: any;
+  price: any;
+  hotel_description: any;
 
   constructor(private hotelOfferService: HotelOfferService) {}
 
@@ -22,10 +24,15 @@ export class IndexOffersComponent implements OnInit{
 
   retrieveHotelOffers() {
     this.hotelOfferService.getHotelOffers().subscribe((data) => {
-      console.log(data);
       this.hotelOffers = data;
+      console.log(this.hotelOffers);
+      this.updateOffers();
     });
+  }
 
-    console.log(this.hotelOffers);
+  updateOffers(){
+    this.name = this.hotelOffers[0].hotel_name;
+    this.price = this.hotelOffers[0].price;
+    this.hotel_description = this.hotelOffers[0].hotel_description;
   }
 }
