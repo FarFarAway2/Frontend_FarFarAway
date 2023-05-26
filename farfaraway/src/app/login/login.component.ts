@@ -18,7 +18,6 @@ export class LoginComponent {
     this.email = (<HTMLInputElement>document.getElementById('email')).value;
     this.password = (<HTMLInputElement>document.getElementById('password')).value;
     console.log(this.email + ' / ' + this.password);
-    this.authService.login(this.email, this.password).subscribe(result => this.token = result);
-    console.log(this.token);
+    this.authService.login(this.email, this.password).subscribe(result => console.log(result));
   }
 }

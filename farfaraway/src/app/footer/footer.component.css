@@ -5,23 +5,21 @@
   left: 0;
   padding: 40px;
   background-color: #600909;
-
 }
+
 .text {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 18px;
 }
 
-.col1{
+.col1 {
   text-align: center;
 }
 
 .img-offer {
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 5px 5px 0px 0px;
   height: 20%;
   width: 20%;
 }
-
-
