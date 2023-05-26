@@ -6,7 +6,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../assets/wallpaperbetter.jpg') no-repeat center center / cover;
+  background: url("../../assets/wallpaperbetter.jpg") no-repeat center center /
+    cover;
   opacity: 0.2;
   z-index: -1;
 }
@@ -19,7 +20,7 @@
 }
 
 .incluid {
-  text-align: center
+  text-align: center;
 }
 
 .conta-img {
@@ -27,31 +28,32 @@
 }
 
 .btn-calendar date-range-picker /deep/ .mat-mdc-form-field {
- width: 20vh;
- /* border: 2px solid grey;
+  width: 20vh;
+  /* border: 2px solid grey;
  border-radius: 10px; */
 }
 
-  .btn-group {
-    margin-top: 20px;
-  }
-  .btn-increment increment-input /deep/ .mat-mdc-form-field {
-    width: 10vh;
-    /* height: 10vh; */
-   }
+.btn-group {
+  margin-top: 20px;
+}
 
-  .btn-bookit {
-    font-size: 18px;
-    border: 1px solid rgb(255, 92, 0);
-    width: 10vh;
-    height: 4vh;
-  }
+.btn-increment increment-input /deep/ .mat-mdc-form-field {
+  width: 10vh;
+  /* height: 10vh; */
+}
 
-  .btn:hover {
-    color: rgb(255, 92, 0);
-  }
+.btn-bookit {
+  font-size: 18px;
+  border: 1px solid rgb(255, 92, 0);
+  width: 10vh;
+  height: 4vh;
+}
 
-  .list-group-item {
-    background-color: transparent;
-    border: 1px solid rgb(149, 149, 149);
-  }
+.btn:hover {
+  color: rgb(255, 92, 0);
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid rgb(149, 149, 149);
+}

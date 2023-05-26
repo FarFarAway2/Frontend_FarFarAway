@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-const AUTH_API = "api-farfaraway-back-production.up.railway.app"
+const AUTH_API = "https://api-farfaraway-back-production.up.railway.app"
 @Injectable({
   providedIn: 'root'
 })
@@ -31,7 +31,7 @@ export class AuthService {
    */
   login(email: string, password:string): Observable<any>
   {
-    return this.httpClient.post(AUTH_API + 'login', {
+    return this.httpClient.post(AUTH_API + '/login', {
       email: email,
       password: password
     });
