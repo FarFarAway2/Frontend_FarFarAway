@@ -14,7 +14,7 @@ import { EditOfferComponent } from './edit-offer/edit-offer.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { OfferCardAdminComponent } from './offer-card-admin/offer-card-admin.component';
 import { MapsComponent } from './maps/maps.component';
-import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMapsModule} from '@angular/google-maps';
 import { AboutComponent } from './about/about.component';
 import { OfferCardComponent } from './offer-card/offer-card.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,7 +26,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import { IncrementInputComponent } from './increment-input/increment-input.component';
-// import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 
@@ -64,7 +64,7 @@ import { IncrementInputComponent } from './increment-input/increment-input.compo
         MatNativeDateModule,
         HttpClientModule,
         DateRangePickerComponent,
-        // MDBBootstrapModule.forRoot(),
+        MDBBootstrapModule.forRoot(),
     ]
 })
 export class AppModule { }
