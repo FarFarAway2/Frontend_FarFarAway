@@ -6,7 +6,8 @@
           <div class="img-offer">
             <img class="card-img-top w-100" src="../assets/Hotel1.jpg" alt="Card image cap">
             <div class="top-right shadow rounded">
-              <countdown class="countdown" [config]="{leftTime: leftTime, format:'d HH:mm:ss'}"  ></countdown>
+              <countdown class="countdown" [config]="{leftTime: leftTime, format:'d'}"></countdown><span> DAYS </span>
+              <countdown class="countdown" [config]="{leftTime: leftTime, format:'HH:mm:ss'}"></countdown>
             </div>
           </div>
           <div class="card-body row">
