@@ -1,6 +1,6 @@
 .barra-buscar-oferta {
   margin-bottom: 40px;
-  height: 200px;
+  height: 300px;
   background-image: url(../../assets/MedievalBackground.jpg) !important;
   background-size: 500px;
   background-repeat: repeat;
@@ -8,47 +8,54 @@
 .nav-item{
   padding-bottom: 10px;
 }
-.drop-offer{
-  width: 25%;
-  padding-bottom: 20px;
+
+.container-white {
+  background-color: white;
+  padding: 25px 25px 10px 25px;
+  margin: 100px;
+  width: 80%;
 }
-.dr-offer {
+
+.search-bar-title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.imput-destination {
   width: 100%;
-  background-color: #ac0006;
+  padding: 0px;
 }
-.dr-offer:hover {
-  background-color: #770004;
+
+.search-bar-col date-range-picker /deep/ .mat-mdc-form-field {
+  width: 100%;
 }
+
+.search-bar-col increment-input /deep/ .mat-mdc-form-field {
+  text-align: center;
+  width: 100%;
+}
+
+.search-bar-col increment-input /deep/ .mat-mdc-input-element {
+  text-align: center !important;
+  width: 100%;
+}
+
 .btn-search {
-  background-color: #e7d2ae;
+  background-color: #ac0006;
+  height: 55px;
+  padding: 0px 40px 0px 40px;
+  width: 100%;
 }
 .btn-search:hover {
-  background-color: #b8a584;
+  background-color: #770004;
 }
 
-/* ------------- */
-
-.btn, .form-control {
-  outline: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+.increment-inputs {
+  width: 350px;
 }
 
-.btn:focus, .btn:active, .form-control:focus, .form-control:active {
-    outline: none;
-}
-
-.form-control {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  height: 50px;
-  border-width: 2px; }
-
-  .form-control:active, .form-control:focus {
-    border-color: #ac0006;
-  }
-
-textarea.form-control {
-  height: inherit;
+.btn-search-col {
+  width: 200px;
 }
 

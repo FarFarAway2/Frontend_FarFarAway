@@ -2,10 +2,10 @@ mat-form-field {
   width: 100%;
   text-align: center;
   -moz-appearance: textfield;
+  display: inline;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   display: none;
 }
-

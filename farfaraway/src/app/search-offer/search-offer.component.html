@@ -1,44 +1,26 @@
-<div class="container-flex bg-dark barra-buscar-oferta">
-  <!-- <div class="col">
-    <h4 class="text text-light text-travel text-center">Search your travel offer</h4>
-  </div>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <div class="dropdown mx-4 drop-offer">
-        <button class="btn btn-secondary dropdown-toggle dr-offer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Destinations
-        </button>
-        <ul class="dropdown-menu drmenu-destination">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <div class="dropdown mx-4 drop-offer">
-        <button class="btn btn-secondary dropdown-toggle dr-offer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Duration
-        </button>
-        <ul class="dropdown-menu drmenu-duration">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <div class="dropdown mx-4 drop-offer">
-        <button class="btn btn-secondary dropdown-toggle dr-offer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Adults
-        </button>
-        <ul class="dropdown-menu drmenu-adults">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <div class="dropdown mx-4 drop-offer">
-        <button type="button" class="btn btn-light btn-search">Search</button>
-      </div>
+<div class="container-flex d-flex align-items-center justify-content-center barra-buscar-oferta">
+  <div class="row shadow rounded justify-content-center container-white">
+    <p class="search-bar-title">Where do you want to travel?</p>
+    <div class="col-lg-3 col-md-12 search-bar-col">
+      <form>
+        <mat-form-field class="imput-destination">
+          <mat-label>Destination</mat-label>
+          <input matInput placeholder="Ex. Barcelona" value="">
+        </mat-form-field>
+      </form>
     </div>
-  </nav> -->
 
-<date-range-picker></date-range-picker>
+    <div class="col-lg-3 col-md-6 search-bar-col date-range-picker">
+      <date-range-picker></date-range-picker>
+    </div>
+
+    <div class="col-lg-3 col-md-6 search-bar-col increment-inputs">
+      <increment-input></increment-input>
+    </div>
+
+    <div class="col-lg-3 col-md-6 search-bar-col btn-search-col">
+      <button type="button" class="btn btn-primary btn-search">Search</button>
+    </div>
+
+  </div>
 </div>
