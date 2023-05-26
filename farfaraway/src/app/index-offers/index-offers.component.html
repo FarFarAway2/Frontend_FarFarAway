@@ -8,7 +8,7 @@
 <div class="container-fluid">
   <div class="row ">
     <div class="col-md-12 col-lg-6" *ngFor="let offer of hotelOffers">
-      <app-offer-card></app-offer-card>
+      <app-offer-card [hotelOffer]="offer"></app-offer-card>
     </div>
   </div>
 </div>
