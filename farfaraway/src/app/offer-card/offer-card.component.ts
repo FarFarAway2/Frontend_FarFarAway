@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-offer-card',
@@ -14,12 +14,15 @@ export class OfferCardComponent {
 
   @Input() hotelOffer: any;
 
+  @Output() hotelData = new EventEmitter<any>();
+
   ngOnInit(): void {
     this.name = this.hotelOffer.hotel_name;
     this.price = this.hotelOffer.price;
     this.description = this.hotelOffer.hotel_description;
     this.expire_date = this.hotelOffer.expire_date;
     this.setLeftTime();
+    this.hotelData.emit({price: this.price, expire_date: this.expire_date})
   }
 
   setLeftTime() {
