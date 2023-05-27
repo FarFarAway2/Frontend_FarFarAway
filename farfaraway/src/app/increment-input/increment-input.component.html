@@ -9,18 +9,18 @@
           matPrefix
           aria-label="Remove"
           [color]="getColor()"
-          (click)="incrementValue(-_step)"
-          [disabled]="shouldDisableDecrement(_value)">
+          (click)="incrementValueAdults(-_stepAdults)"
+          [disabled]="shouldDisableDecrementAdults(_valueAdults)">
           <mat-icon>remove</mat-icon>
         </button>
-        <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />
+        <input matInput type="number" [(ngModel)]="_valueAdults" (focus)="setColor('primary')" (blur)="setColor('default')" />
         <button
           mat-icon-button
           matSuffix
           aria-label="Add"
           [color]="getColor()"
-          (click)="incrementValue(_step)"
-          [disabled]="shouldDisableIncrement(_value)">
+          (click)="incrementValueAdults(_stepAdults)"
+          [disabled]="shouldDisableIncrementAdults(_valueAdults)">
           <mat-icon>add</mat-icon>
         </button>
       </mat-form-field>
@@ -34,18 +34,18 @@
           matPrefix
           aria-label="Remove"
           [color]="getColor()"
-          (click)="incrementValue(-_step)"
-          [disabled]="shouldDisableDecrement(_value)">
+          (click)="incrementValueChildren(-_stepChildren)"
+          [disabled]="shouldDisableDecrementChildren(_valueChildren)">
           <mat-icon>remove</mat-icon>
         </button>
-        <input matInput type="number" [(ngModel)]="_value" (focus)="setColor('primary')" (blur)="setColor('default')" />
+        <input matInput type="number" [(ngModel)]="_valueChildren" (focus)="setColor('primary')" (blur)="setColor('default')" />
         <button
           mat-icon-button
           matSuffix
           aria-label="Add"
           [color]="getColor()"
-          (click)="incrementValue(_step)"
-          [disabled]="shouldDisableIncrement(_value)">
+          (click)="incrementValueChildren(_stepChildren)"
+          [disabled]="shouldDisableIncrementChildren(_valueChildren)">
           <mat-icon>add</mat-icon>
         </button>
       </mat-form-field>
