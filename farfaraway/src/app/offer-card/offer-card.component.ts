@@ -20,6 +20,7 @@ export class OfferCardComponent {
   navigateToOfferPage(id_hotel:string): void {
     this.router.navigate(['/book',id_hotel]);
   }
+
   @Input() hotelOffer: any;
 
   ngOnInit(): void {
@@ -32,9 +33,9 @@ export class OfferCardComponent {
   }
 
   setLeftTime() {
-    console.log(new Date(this.expire_date).getTime() +'/'+ new Date().getTime())
+    // console.log(new Date(this.expire_date).getTime() +'/'+ new Date().getTime())
     this.leftTime = new Date(this.expire_date).getTime() - new Date().getTime();
-    console.log(this.leftTime);
+    // console.log(this.leftTime);
   }
 
   // Función para codificar la ruta

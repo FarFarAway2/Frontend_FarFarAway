@@ -5,7 +5,7 @@
       <form>
         <mat-form-field class="imput-destination">
           <mat-label>Destination</mat-label>
-          <input matInput placeholder="Ex. Barcelona" value="">
+          <input id="destination" matInput placeholder="Ex. Barcelona" value="">
         </mat-form-field>
       </form>
     </div>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="col-lg-3 col-md-6 search-bar-col btn-search-col">
-      <button type="button" class="btn btn-primary btn-search">Search</button>
+      <button type="button" class="btn btn-primary btn-search" (click)="searchOffer()">Search</button>
     </div>
 
   </div>

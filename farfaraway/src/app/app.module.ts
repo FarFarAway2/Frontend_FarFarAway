@@ -27,6 +27,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import { IncrementInputComponent } from './increment-input/increment-input.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { OfferCardTravelComponent } from './offer-card-travel/offer-card-travel.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
 
@@ -49,6 +51,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
         OfferCardComponent,
         FooterComponent,
         IncrementInputComponent,
+        OfferCardTravelComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -63,6 +66,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
         BrowserAnimationsModule,
         MatNativeDateModule,
         HttpClientModule,
+        MatDatepickerModule,
         DateRangePickerComponent,
         MDBBootstrapModule.forRoot(),
     ]
