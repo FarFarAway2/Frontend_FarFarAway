@@ -1,7 +1,8 @@
 <app-search-offer></app-search-offer>
 <div class="container-left">
   <div class="shadow rounded map">
-    <google-map [center]="center" [zoom]="zoom" class="maps">
+
+    <google-map [center]="center" [zoom]="zoom" [options]="mapOptions" class="maps">
       <map-marker
         *ngFor="let marker of markers"
         [position]="marker"

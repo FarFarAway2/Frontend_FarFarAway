@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HotelOfferService } from '../service/hotel-offer.service';
 import { HotelOfferModel } from '../models/hotel-offer-model.model';
 import { TravelOfferService } from '../service/travel-offer.service';
@@ -13,9 +13,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./index-offers.component.css'],
 })
 export class IndexOffersComponent implements OnInit {
-  zoom = 12;
-  center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
+  @Input() options: google.maps.MapOptions | undefined;
+  zoom = 7;
+  center: google.maps.LatLngLiteral = { lat: 42.0, lng: 2.2 };
   markers: google.maps.LatLngLiteral[] = [];
+  mapOptions: google.maps.MapOptions = {
+    streetViewControl: false,
+    mapTypeControl: false,
+    zoomControl: false,
+  };
 
   offers: any;
 
