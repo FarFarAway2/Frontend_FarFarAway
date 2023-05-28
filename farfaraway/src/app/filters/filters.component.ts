@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { Filter } from '../models/filter';
 
 @Component({
   selector: 'app-filters',
@@ -7,6 +8,8 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./filters.component.css'],
 })
 export class FiltersComponent {
+  @Output() filterEvent = new EventEmitter<Filter>();
+
   themes = new FormControl('');
   themesList: string[] = [
     'Medieval',
@@ -100,21 +103,21 @@ export class FiltersComponent {
       this.activePriceTop = priceLow;
     }
 
-    // THEMES
-
-    // SPECIAL DATES
-
     // LAST OPTIONS
     var checkboxLO = <HTMLInputElement>document.getElementById('lastoptions');
     this.activeLastOptions = checkboxLO.checked;
 
-    // TESTING
-    console.log('Filters:');
-    console.log('Ratings: ' + this.activeRatings);
-    console.log('Price low: ' + this.activePriceLow);
-    console.log('Price top: ' + this.activePriceTop);
-    console.log('Themes: ' + this.activeThemes);
-    console.log('Special Dates: ' + this.activeSpecialDates);
-    console.log('Last options: ' + this.activeLastOptions);
+    // CREATE FILTER OBJECT
+    let filterObject: Filter = {
+      ratings: this.activeRatings,
+      priceLow: this.activePriceLow,
+      priceTop: this.activePriceTop,
+      themes: this.activeThemes,
+      specialDates: this.activeSpecialDates,
+      lastOptions: this.activeLastOptions,
+    };
+
+    // EVENT EMIT
+    this.filterEvent.emit(filterObject);
   }
 }
