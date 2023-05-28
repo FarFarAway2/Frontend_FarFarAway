@@ -1,5 +1,7 @@
-<img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="farfaraway" width="200"/>
-](https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png "farfaraway")
+<div align="center">
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="farfaraway" width="200"/>
+</div>
+
 
 #### Description of the components
 
