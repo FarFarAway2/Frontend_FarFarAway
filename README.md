@@ -2,6 +2,11 @@
   <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="farfaraway" width="300"/>
 </div>
 
+<div align="center">
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="Imagen 1" style="width:300px; display: inline-block; margin: 10px;"/>
+  <img src="URL_DE_IMAGEN_2" alt="Imagen 2" style="width:300px; display: inline-block; margin: 10px;"/>
+</div>
+
 #### Description of the components
 
 - A hotel offer card component. This card displays the hotel image, the time remaining for the offer, the name, the description and the price of the offer. Users can click on this card to navigate to the hotel offer page.
@@ -68,11 +73,4 @@ The main module of the application imports all the other necessary modules, incl
 
 The components imported and declared in the main module are used to build the user interface of the application. Each component consists of an HTML template, a CSS stylesheet, and a TypeScript class that controls the logic of the component. The Component' annotation is used to define the component's metadata, including the path to its template and stylesheet.
 
-<div align="center">
-  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="tsystems" width="300"/>
-</div>
-
-
-
-
-
+#### Class Diagram and Relational Models
