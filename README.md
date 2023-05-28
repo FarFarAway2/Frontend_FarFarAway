@@ -8,6 +8,8 @@
 
 <h3 >Team members: </h3><h4>Andrea Dal Pezzo</h4><h4>Roger Gilgert</h4><h4>Marc Sáez</h4><h4>Alberto del Pozo</h4>
 
+# *Frontend_FarFarAway*
+
 #### Description of the components
 
 - A hotel offer card component. This card displays the hotel image, the time remaining for the offer, the name, the description and the price of the offer. Users can click on this card to navigate to the hotel offer page.
@@ -73,6 +75,7 @@ The application has a basic structure that includes a navigation bar at the top,
 The main module of the application imports all the other necessary modules, including the routing module, and declares all the components to be used in the application. 
 
 The components imported and declared in the main module are used to build the user interface of the application. Each component consists of an HTML template, a CSS stylesheet, and a TypeScript class that controls the logic of the component. The Component' annotation is used to define the component's metadata, including the path to its template and stylesheet.
+------------
 
 ### Class Diagram and Relational Models
 [https://github.com/FarFarAway2/Backend_FarFarAway/blob/main/ModER_ModRel.jpg](https://github.com/FarFarAway2/Backend_FarFarAway/blob/main/ModER_ModRel.jpg)
