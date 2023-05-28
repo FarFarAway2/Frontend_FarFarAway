@@ -18,9 +18,7 @@ export class OfferCardComponent {
   constructor(private router: Router) {}
 
   navigateToOfferPage(id_hotel:string): void {
-    console.log(id_hotel);
-    this.router.navigate(['/offerpage',id_hotel]);
-    console.log('hola')
+    this.router.navigate(['/book',id_hotel]);
   }
   @Input() hotelOffer: any;
 
