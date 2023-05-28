@@ -1,0 +1,27 @@
+<div class="container box1">
+  <div class="row">
+    <div class="col-12 col-md-6 col1">
+      <a style="cursor: pointer;" (click)="navigateToOfferPage(travelOffer.id_travel)">
+        <div class="card mb-3 hover-zoom">
+          <div class="img-offer">
+            <img class="card-img-top w-100" [src]="'../assets/Hotel' + id + '.jpg'" alt="Card image cap">
+            <div class="top-right shadow rounded">
+              <countdown class="countdown" [config]="{leftTime: leftTime, format:'d'}"></countdown><span> DAYS </span>
+              <countdown class="countdown" [config]="{leftTime: leftTime, format:'HH:mm:ss'}"></countdown>
+            </div>
+          </div>
+          <div class="card-body row">
+            <div class="col-8">
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">{{description}}</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <div class="col-4">
+              <button type="button" class="btn btn-primary">{{price}}€ /pers.</button>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

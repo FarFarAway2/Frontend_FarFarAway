@@ -2,12 +2,13 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-offer-card',
-  templateUrl: './offer-card.component.html',
-  styleUrls: ['./offer-card.component.css'],
+  selector: 'app-offer-card-travel',
+  templateUrl: './offer-card-travel.component.html',
+  styleUrls: ['./offer-card-travel.component.css']
 })
+export class OfferCardTravelComponent {
+  constructor(private router: Router) {}
 
-export class OfferCardComponent {
   id = 0;
   name = 'Default name';
   price = 666;
@@ -15,20 +16,18 @@ export class OfferCardComponent {
   expire_date: any;
   leftTime = 100;
 
-  constructor(private router: Router) {}
+  @Input() travelOffer: any;
 
-  navigateToOfferPage(id_hotel:string): void {
-    this.router.navigate(['/book',id_hotel]);
+  navigateToOfferPage(id_travel:string): void {
+    this.router.navigate(['/book',id_travel]);
   }
 
-  @Input() hotelOffer: any;
-
   ngOnInit(): void {
-    this.id = this.hotelOffer.id_hotel;
-    this.name = this.hotelOffer.hotel_name;
-    this.price = this.hotelOffer.price;
-    this.description = this.hotelOffer.hotel_description;
-    this.expire_date = this.hotelOffer.expire_date;
+    this.id = this.travelOffer.id_travel;
+    this.name = this.travelOffer.travel_name;
+    this.price = this.travelOffer.price;
+    this.description = this.travelOffer.travel_description;
+    this.expire_date = this.travelOffer.expire_date;
     this.setLeftTime();
   }
 

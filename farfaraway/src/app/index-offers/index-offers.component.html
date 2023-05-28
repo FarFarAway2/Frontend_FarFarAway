@@ -1,14 +1,29 @@
 <app-search-offer></app-search-offer>
 <div class="container-left">
   <div class="shadow rounded map">
-    <google-map [center]="center" [zoom]="zoom"></google-map>
+    <google-map [center]="center" [zoom]="zoom" class="maps">
+      <map-marker
+        *ngFor="let marker of markers"
+        [position]="marker"
+      ></map-marker>
+    </google-map>
   </div>
   <app-filters class="filters"></app-filters>
 </div>
 <div class="container-fluid">
-  <div class="row ">
+  <div class="row">
     <div class="col-md-12 col-lg-6" *ngFor="let offer of hotelOffers">
       <app-offer-card [hotelOffer]="offer"></app-offer-card>
+    </div>
+  </div>
+</div>
+
+<!--  ACABAR DE DEFINIR ESTRUCTURA  -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-lg-6" *ngFor="let offer of travelOffers">
+      <app-offer-card-travel [travelOffer]="offer"></app-offer-card-travel>
     </div>
   </div>
 </div>
