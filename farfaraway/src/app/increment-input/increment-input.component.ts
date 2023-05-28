@@ -12,36 +12,14 @@ export class IncrementInputComponent {
     formField: new FormControl()
   });
 
-  _value: number = 0;
-  _step: number = 1;
-  _min: number = 0;
-  _max: number = 10;
-  _wrap: boolean = false;
   color: string = 'default';
 
-  @Input('value')
-  set inputValue(_value: number) {
-    this._value = this.parseNumber(_value);
+  setColor(color: string): void {
+    this.color = color;
   }
 
-  @Input()
-  set step(_step: number) {
-    this._step = this.parseNumber(_step);
-  }
-
-  @Input()
-  set min(_min: number) {
-    this._min = this.parseNumber(_min);
-  }
-
-  @Input()
-  set max(_max: number) {
-    this._max = this.parseNumber(_max);
-  }
-
-  @Input()
-  set wrap(_wrap: boolean) {
-    this._wrap = this.parseBoolean(_wrap);
+  getColor(): string {
+    return this.color
   }
 
   private parseNumber(num: any): number {
@@ -52,47 +30,137 @@ export class IncrementInputComponent {
     return !!bool;
   }
 
-  setColor(color: string): void {
-    this.color = color;
+  // ------ CHILDREN ------
+  _valueChildren: number = 0;
+  _stepChildren: number = 1;
+  _minChildren: number = 0;
+  _maxChildren: number = 10;
+  _wrapChildren: boolean = false;
+
+  @Input('valueChildren')
+  set inputValueChildren(_valueChildren: number) {
+    this._valueChildren = this.parseNumber(_valueChildren);
   }
 
-  getColor(): string {
-    return this.color
+  @Input()
+  set stepChildren(_stepChildren: number) {
+    this._stepChildren = this.parseNumber(_stepChildren);
   }
 
-  incrementValue(step: number = 1): void {
+  @Input()
+  set minChildren(_minChildren: number) {
+    this._minChildren = this.parseNumber(_minChildren);
+  }
 
-    let inputValue = this._value + step;
+  @Input()
+  set maxChildren(_maxChildren: number) {
+    this._maxChildren = this.parseNumber(_maxChildren);
+  }
 
-    if (this._wrap) {
-      inputValue = this.wrappedValue(inputValue);
+  @Input()
+  set wrapChildren(_wrapChildren: boolean) {
+    this._wrapChildren = this.parseBoolean(_wrapChildren);
+  }
+
+  incrementValueChildren(stepChildren: number = 1): void {
+    let inputValueChildren = this._valueChildren + stepChildren;
+
+    if (this._wrapChildren) {
+      inputValueChildren = this.wrappedValueChildren(inputValueChildren);
     }
 
-    this._value = inputValue;
+    this._valueChildren = inputValueChildren;
   }
 
-  private wrappedValue(inputValue:number): number {
-    if (inputValue > this._max) {
-      return this._min + inputValue - this._max;
+  private wrappedValueChildren(inputValueChildren:number): number {
+    if (inputValueChildren > this._maxChildren) {
+      return this._minChildren + inputValueChildren - this._maxChildren;
     }
 
-    if (inputValue < this._min) {
+    if (inputValueChildren < this._minChildren) {
 
-      if (this._max === Infinity) {
+      if (this._maxChildren === Infinity) {
         return 0;
       }
 
-      return this._max + inputValue;
+      return this._maxChildren + inputValueChildren;
     }
 
-    return inputValue;
+    return inputValueChildren;
   }
 
-  shouldDisableDecrement(inputValue: number): boolean {
-    return !this._wrap && inputValue <= this._min;
+  shouldDisableDecrementChildren(inputValueChildren: number): boolean {
+    return !this._wrapChildren && inputValueChildren <= this._minChildren;
   }
 
-  shouldDisableIncrement(inputValue: number): boolean {
-    return !this._wrap && inputValue >= this._max;
+  shouldDisableIncrementChildren(inputValueChildren: number): boolean {
+    return !this._wrapChildren && inputValueChildren >= this._maxChildren;
+  }
+
+  // ------ ADULTS ------
+  _valueAdults: number = 0;
+  _stepAdults: number = 1;
+  _minAdults: number = 0;
+  _maxAdults: number = 10;
+  _wrapAdults: boolean = false;
+
+  @Input('valueAdults')
+  set inputValueAdults(_valueAdults: number) {
+    this._valueAdults = this.parseNumber(_valueAdults);
+  }
+
+  @Input()
+  set stepAdults(_stepAdults: number) {
+    this._stepAdults = this.parseNumber(_stepAdults);
+  }
+
+  @Input()
+  set minAdults(_minAdults: number) {
+    this._minAdults = this.parseNumber(_minAdults);
+  }
+
+  @Input()
+  set maxAdults(_maxAdults: number) {
+    this._maxAdults = this.parseNumber(_maxAdults);
+  }
+
+  @Input()
+  set wrapAdults(_wrapAdults: boolean) {
+    this._wrapAdults = this.parseBoolean(_wrapAdults);
+  }
+
+  incrementValueAdults(stepAdults: number = 1): void {
+    let inputValueAdults = this._valueAdults + stepAdults;
+
+    if (this._wrapAdults) {
+      inputValueAdults = this.wrappedValueAdults(inputValueAdults);
+    }
+
+    this._valueAdults = inputValueAdults;
+  }
+
+  private wrappedValueAdults(inputValueAdults:number): number {
+    if (inputValueAdults > this._maxAdults) {
+      return this._minAdults + inputValueAdults - this._maxAdults;
+    }
+
+    if (inputValueAdults < this._minAdults) {
+
+      if (this._maxAdults === Infinity) {
+        return 0;
+      }
+
+      return this._maxAdults + inputValueAdults;
+    }
+
+    return inputValueAdults;
+  }
+
+  shouldDisableDecrementAdults(inputValueAdults: number): boolean {
+    return !this._wrapAdults && inputValueAdults <= this._minAdults;
+  }
+
+  shouldDisableIncrementAdults(inputValueAdults: number): boolean {
+    return !this._wrapAdults && inputValueAdults >= this._maxAdults;
   }
 }

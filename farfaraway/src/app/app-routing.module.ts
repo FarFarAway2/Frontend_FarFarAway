@@ -33,7 +33,7 @@ const routes: Routes = [
     component: EditOfferComponent,
   },
   {
-    path: 'offerpage/:id_hotel',
+    path: 'book/:id_hotel',
     component: OfferPageComponent,
   },
   {
@@ -58,4 +58,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+
+}

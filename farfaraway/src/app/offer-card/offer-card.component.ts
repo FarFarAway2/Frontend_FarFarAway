@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 
 export class OfferCardComponent {
+  id = 0;
   name = 'Default name';
   price = 666;
   description = 'Default description';
@@ -24,6 +25,7 @@ export class OfferCardComponent {
   @Input() hotelOffer: any;
 
   ngOnInit(): void {
+    this.id = this.hotelOffer.id_hotel;
     this.name = this.hotelOffer.hotel_name;
     this.price = this.hotelOffer.price;
     this.description = this.hotelOffer.hotel_description;
@@ -35,5 +37,10 @@ export class OfferCardComponent {
     console.log(new Date(this.expire_date).getTime() +'/'+ new Date().getTime())
     this.leftTime = new Date(this.expire_date).getTime() - new Date().getTime();
     console.log(this.leftTime);
+  }
+
+  // Función para codificar la ruta
+  codificarRuta(ruta: string): string {
+    return encodeURIComponent(ruta).replace(/%20/g, '_');
   }
 }
