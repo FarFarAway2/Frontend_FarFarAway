@@ -51,25 +51,30 @@
   width: 100%;
 }
 
-.btn-calendar date-range-picker /deep/ .mat-mdc-form-field {
-  width: 20vh;
+.btn-calendar date-range-picker /deep/ .mat-mdc-form-field-flex {
+  width: 220px;
 
 }
 
-.btn-increment increment-input /deep/ .mat-mdc-form-field {
-  width: 10vh;
+.btn-increment increment-input /deep/ .mat-mdc-form-field-flex {
+  width: 150px;
+}
 
+.btn-increment increment-input /deep/ .mat-mdc-input-element {
+  text-align: center !important;
 }
 
 .btn-bookit {
-  font-size: 18px;
-  border: 1px solid rgb(255, 92, 0);
-  width: 10vh;
-  height: 4vh;
+  font-size: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #ac0006;
+  text-align: center;
+  border: none;
 }
 
-.btn:hover {
-  color: rgb(255, 92, 0);
+.btn-bookit:hover {
+  background-color: #770004;
 }
 
 .list-group-item {
@@ -82,3 +87,34 @@
   margin-left: 10px;
 }
 
+.modal-body {
+  padding: 20px;
+}
+
+.modal-content {
+  overflow:hidden;
+  border-radius: 8px;
+}
+
+.input-group-text {
+  width: 100px;
+}
+
+.complete-book {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress, .progress-stacked {
+  background-color: #ac0006;
+  height: 40px;
+}
+
+.progress-bar {
+  background-color: #bc383c;
+}

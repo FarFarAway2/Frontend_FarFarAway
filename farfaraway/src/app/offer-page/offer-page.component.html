@@ -61,7 +61,38 @@
       <increment-input></increment-input>
     </div>
     <div class="bookit mx-3">
-      <button type="button" class="btn btn-secondary btn-bookit">Book it</button>
+      <!-- Button trigger modal -->
+      <button type="button"class="btn btn-primary btn-bookit" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Book it
+      </button>
+
+      <!-- Modal -->
+      <div #myModal class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Last Name</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">Email</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div style="position: relative;" (click)="makeProgress()" (click)="closeModal()">
+                <div class="complete-book justify-content-center">Complete book</div>
+                <div class="progress" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

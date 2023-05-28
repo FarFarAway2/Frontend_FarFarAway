@@ -11,7 +11,7 @@
             <map-marker *ngFor="let marker of markers" [position]="marker"></map-marker>
           </google-map>
         </div>
-        <div class="col-4">
+        <div class="col-4 overflow-auto">
           <div class="col-md-6 col-lg-6" *ngFor="let offer of hotelOffers">
             <app-offer-card [hotelOffer]="offer"></app-offer-card>
           </div>
