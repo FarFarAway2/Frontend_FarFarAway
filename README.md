@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="Imagen 1" style="width:200px; display: inline-block; margin: 10px;"/>
-  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="Imagen 2" style="width:200px; display: inline-block; margin: 10px;"/>
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="Imagen 1" style="width:300px; display: inline-block; margin: 30px;"/>
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="Imagen 2" style="width:300px; display: inline-block; margin: 30px;"/>
 </div>
 
 #### Description of the components
