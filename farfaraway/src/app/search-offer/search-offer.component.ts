@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { DateRangePickerComponent } from '../date-range-picker/date-range-picker.component';
 
 @Component({
@@ -7,20 +7,14 @@ import { DateRangePickerComponent } from '../date-range-picker/date-range-picker
   styleUrls: ['./search-offer.component.css'],
 })
 
-export class SearchOfferComponent implements AfterViewInit{
-
-@ViewChild(DateRangePickerComponent) child:any;
+export class SearchOfferComponent{
 
   destination:string = '';
   startDate:any;
   endDate:any;
 
-ngAfterViewInit(){}
-
   searchOffer() {
     this.destination = (<HTMLInputElement>document.getElementById('destination')).value;
-
-    this.child.getDates();
 
     //TESTING
     console.log('SEARCH');
