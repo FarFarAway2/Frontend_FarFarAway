@@ -1,10 +1,10 @@
 <div class="container box1">
   <div class="row">
     <div class="col-12 col-lg-6 col1">
-      <a href="/offerpage">
+      <a [href]="'book/' + codificarRuta(name)">
         <div class="card mb-3 hover-zoom">
           <div class="img-offer">
-            <img class="card-img-top w-100" src="../assets/Hotel1.jpg" alt="Card image cap">
+            <img class="card-img-top w-100" [src]="'../assets/Hotel' + id + '.jpg'" alt="Card image cap">
             <div class="top-right shadow rounded">
               <countdown class="countdown" [config]="{leftTime: leftTime, format:'d'}"></countdown><span> DAYS </span>
               <countdown class="countdown" [config]="{leftTime: leftTime, format:'HH:mm:ss'}"></countdown>

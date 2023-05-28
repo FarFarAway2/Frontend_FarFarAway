@@ -24,7 +24,11 @@ export class OfferPageComponent implements OnInit {
   ngOnInit(): void {
     this.hotelOfferService.getHotelOffers().subscribe((offer) => {
       console.log(offer);
-      this.hotelOffer = offer[0];
+
+      for (let i = 0; i < offer.length; i++) {
+        this.hotelOffer = offer[i];
+      }
+
       this.name = this.hotelOffer.hotel_name;
       this.price = this.hotelOffer.price;
       this.description = this.hotelOffer.hotel_description;
