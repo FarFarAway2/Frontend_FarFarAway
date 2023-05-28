@@ -4,13 +4,9 @@
 </div>
 <h1 align="center">Far Far Away by <span>The Updates</span></h1>
 
-<h3>App name:<h4>Far Far Away</h4></h3>
+<h3>App name:<span> Far Far Away</span></h3>
 
-<h3 >Team members: 
-<h4><span>Andrea Dal Pezzo</span>
-<span>Roger Gilgert</span>
-<span>Marc Sáez</span>
-<span>Alberto del Pozo</span></h4></h3>
+<h3 >Team members: </h3><h4>Andrea Dal Pezzo</h4><h4>Roger Gilgert</h4><h4>Marc Sáez</h4><h4>Alberto del Pozo</h4>
 
 #### Description of the components
 
