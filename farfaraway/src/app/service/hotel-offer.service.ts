@@ -15,12 +15,6 @@ export class HotelOfferService {
   getHotelOffers(): Observable<HotelOfferModel[]> {
     return this.httpClient.get<HotelOfferModel[]>(URL + '/hoteloffers');
   }
-  setHotelOffer(hotelOffer: HotelOfferModel) {
-    this.hotelOffer = hotelOffer;
-  }
-  // getHotelOffer(): HotelOfferModel{
-  //   return this.hotelOffer;
-  // }
 
   getHotelOffersID(id: number): Observable<HotelOfferModel> {
     return this.httpClient.get<HotelOfferModel>(URL + '/hoteloffers/' + id);

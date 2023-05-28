@@ -1,46 +1,54 @@
 import { Component, OnInit } from '@angular/core';
 import { HotelOfferService } from '../service/hotel-offer.service';
 import { HotelOfferModel } from '../models/hotel-offer-model.model';
+import { TravelOfferService } from '../service/travel-offer.service';
+import { TravelOfferModel } from '../models/travel-offer-model.model';
 
 @Component({
   selector: 'app-index-offers',
   templateUrl: './index-offers.component.html',
   styleUrls: ['./index-offers.component.css'],
 })
-export class IndexOffersComponent implements OnInit{
+export class IndexOffersComponent implements OnInit {
   zoom = 12;
   center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
+  markers: google.maps.LatLngLiteral[] = [];
 
   hotelOffers: HotelOfferModel[] = [];
-  name: any;
-  price: any;
-  hotel_description: any;
+  travelOffers: HotelOfferModel[] = [];
 
-  constructor(private hotelOfferService: HotelOfferService) {}
+  constructor(private hotelOfferService: HotelOfferService, private travelOfferService: TravelOfferService) {}
 
   ngOnInit() {
     this.retrieveHotelOffers();
+    this.retrieveTravelOffers();
   }
 
   retrieveHotelOffers() {
     this.hotelOfferService.getHotelOffers().subscribe((data) => {
       this.hotelOffers = data;
-      console.log(this.hotelOffers)
+      console.log(this.hotelOffers);
       this.hotelOffers.forEach((offer) => {
         if (offer.latitude !== undefined && offer.longitude !== undefined) {
-          this.addMarkers({ lat: offer.latitude, lng: offer.longitude });
+          const lat = parseFloat(offer.latitude);
+          const lng = parseFloat(offer.longitude);
+          if (!isNaN(lat) && !isNaN(lng)) {
+            this.addMarkers({ lat, lng });
+          }
         }
       });
     });
   }
-  addMarkers(arg0: { lat: string; lng: string; }) {
-    throw new Error('Method not implemented.');
+
+  retrieveTravelOffers() {
+  this.travelOfferService.getTravelOffers().subscribe((data) => {
+      this.travelOffers = data;
+      console.log(this.travelOffers);
+    });
   }
 
-
-  updateOffers(){
-    this.name = this.hotelOffers[0].hotel_name;
-    this.price = this.hotelOffers[0].price;
-    this.hotel_description = this.hotelOffers[0].hotel_description;
+  addMarkers(marker: google.maps.LatLngLiteral) {
+    this.markers.push(marker);
+    console.log(this.markers);
   }
 }

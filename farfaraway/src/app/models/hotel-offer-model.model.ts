@@ -5,4 +5,5 @@ export class HotelOfferModel {
   expire_date?: Date;
   latitude?: string;
   longitude?: string;
+  rating?: number;
 }

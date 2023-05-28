@@ -77,13 +77,13 @@
     <h5>Price:</h5>
     <div class="col-md">
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInputGrid" placeholder="EUR" value="">
+        <input type="text" class="form-control" id="pricelow" placeholder="EUR" value="">
         <label for="floatingInputGrid">From</label>
       </div>
     </div>
     <div class="col-md">
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInputGrid" placeholder="EUR" value="">
+        <input type="text" class="form-control" id="pricetop" placeholder="EUR" value="">
         <label for="floatingInputGrid">To</label>
       </div>
     </div>
@@ -97,7 +97,7 @@
       <mat-form-field>
         <mat-label>Themes</mat-label>
         <mat-select [formControl]="themes" multiple>
-          <mat-option *ngFor="let theme of themesList" [value]="theme">{{theme}}</mat-option>
+          <mat-option (onSelectionChange)="getValuesThemes($event)" *ngFor="let theme of themesList" [value]="theme">{{theme}}</mat-option>
         </mat-select>
       </mat-form-field>
     </div>
@@ -111,7 +111,7 @@
         <mat-form-field>
           <mat-label>Special Dates</mat-label>
           <mat-select [formControl]="specialDates" multiple>
-            <mat-option *ngFor="let specialDate of specialDatesList" [value]="specialDate">{{specialDate}}</mat-option>
+            <mat-option (onSelectionChange)="getValuesSpecialDates($event)" *ngFor="let specialDate of specialDatesList" [value]="specialDate">{{specialDate}}</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
@@ -136,6 +136,6 @@
 
   <!-- BUTTON FILTER -->
   <div class="row justify-content-center">
-    <button type="button" class="btn btn-primary btn-filter">Filter</button>
+    <button type="button" class="btn btn-primary btn-filter" (click)="filterOffers()">Filter</button>
   </div>
 </div>
