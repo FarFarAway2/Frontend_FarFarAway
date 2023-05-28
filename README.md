@@ -1,7 +1,6 @@
 <div align="center">
-  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="farfaraway" width="200"/>
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="farfaraway" width="300"/>
 </div>
-
 
 #### Description of the components
 
@@ -68,6 +67,10 @@ The application has a basic structure that includes a navigation bar at the top,
 The main module of the application imports all the other necessary modules, including the routing module, and declares all the components to be used in the application. 
 
 The components imported and declared in the main module are used to build the user interface of the application. Each component consists of an HTML template, a CSS stylesheet, and a TypeScript class that controls the logic of the component. The Component' annotation is used to define the component's metadata, including the path to its template and stylesheet.
+
+<div align="center">
+  <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="tsystems" width="300"/>
+</div>
 
 
 
