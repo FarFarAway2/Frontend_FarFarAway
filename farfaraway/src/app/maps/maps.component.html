@@ -7,7 +7,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-8">
-          <google-map [center]="center" [zoom]="zoom" class="maps">
+          <google-map [center]="center" [zoom]="zoom" class="maps"
+            [options]="{streetViewControl: false,zoomControl: false, mapTypeControl: false}">
             <map-marker *ngFor="let marker of markers" [position]="marker"></map-marker>
           </google-map>
         </div>

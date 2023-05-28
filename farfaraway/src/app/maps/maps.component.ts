@@ -8,8 +8,8 @@ import { HotelOfferModel } from '../models/hotel-offer-model.model';
   styleUrls: ['./maps.component.css'],
 })
 export class MapsComponent implements OnInit {
-  zoom = 10;
-  center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
+  zoom = 9;
+  center: google.maps.LatLngLiteral = { lat: 39.600, lng: 1.300 };
   markers: google.maps.LatLngLiteral[] = [];
 
   hotelOffers: HotelOfferModel[] = [];
