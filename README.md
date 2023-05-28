@@ -2,15 +2,15 @@
   <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/Logo_horizontal.png" alt="Imagen 1" style="width:300px; display: inline-block; margin: 30px;"/>
   <img src="https://github.com/FarFarAway2/Frontend_FarFarAway/blob/main/tsystems.png" alt="Imagen 2" style="width:200px; display: inline-block; margin: 30px; margin"/>
 </div>
-<h2 align="center">Far Far Away by <span style="color: red">The Updates</span></h2>
+<h1 align="center">Far Far Away by <span>The Updates</span></h1>
 
-<h3 >App name: <span style="color: blue">Far Far Away</span></h3>
+<h3>App name:<h4>Far Far Away</h4></h3>
 
-<h3 >Team formed by 
-<h4><span style="color: red">Andrea Dal Pezzo</span>
-<span style="color: black">Roger Gilgert</span>
-<span style="color: black">Marc Sáez</span>
-<span style="color: #FF0000">Alberto del Pozo</span></h4></h3>
+<h3 >Team members: 
+<h4><span>Andrea Dal Pezzo</span>
+<span>Roger Gilgert</span>
+<span>Marc Sáez</span>
+<span>Alberto del Pozo</span></h4></h3>
 
 #### Description of the components
 
@@ -78,9 +78,9 @@ The main module of the application imports all the other necessary modules, incl
 
 The components imported and declared in the main module are used to build the user interface of the application. Each component consists of an HTML template, a CSS stylesheet, and a TypeScript class that controls the logic of the component. The Component' annotation is used to define the component's metadata, including the path to its template and stylesheet.
 
-#### Class Diagram and Relational Models
+### Class Diagram and Relational Models
 [https://github.com/FarFarAway2/Backend_FarFarAway/blob/main/ModER_ModRel.jpg](https://github.com/FarFarAway2/Backend_FarFarAway/blob/main/ModER_ModRel.jpg)
-#### Git Repositories
+### Git Repositories
 #### Front-End Repository
 [https://github.com/FarFarAway2/Frontend_FarFarAway](https://github.com/FarFarAway2/Frontend_FarFarAway)
 #### Back-End Repository
