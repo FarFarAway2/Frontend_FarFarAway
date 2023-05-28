@@ -1,22 +1,13 @@
 <app-search-offer></app-search-offer>
 <div class="container-left">
   <div class="shadow rounded map">
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-    <google-map [center]="center" [zoom]="zoom" class="maps">
+
+    <google-map [center]="center" [zoom]="zoom" [options]="mapOptions" class="maps">
       <map-marker
         *ngFor="let marker of markers"
         [position]="marker"
       ></map-marker>
     </google-map>
-<<<<<<< Updated upstream
-=======
-=======
-    <google-map [center]="center" [zoom]="zoom" [options]="mapOptions"></google-map>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   </div>
   <app-filters class="filters"></app-filters>
 </div>
