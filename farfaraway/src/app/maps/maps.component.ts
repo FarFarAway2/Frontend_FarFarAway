@@ -1,29 +1,48 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { HotelOfferService } from '../service/hotel-offer.service';
+import { HotelOfferModel } from '../models/hotel-offer-model.model';
 
 @Component({
   selector: 'app-maps',
   templateUrl: './maps.component.html',
   styleUrls: ['./maps.component.css'],
 })
-export class MapsComponent {
+export class MapsComponent implements OnInit {
   zoom = 10;
   center: google.maps.LatLngLiteral = { lat: 41.3851, lng: 2.1734 };
   markers: google.maps.LatLngLiteral[] = [];
 
-  handleClick(event: google.maps.MapMouseEvent) {
-    console.log(`Las coordenadas son: ${event.latLng?.lat()}, ${event.latLng?.lng()}`);
+  hotelOffers: HotelOfferModel[] = [];
+
+  constructor(
+    private hotelOfferService: HotelOfferService,
+    private cd: ChangeDetectorRef
+  ) {}
+
+  addMarkers(marker: google.maps.LatLngLiteral) {
+    this.markers.push(marker);
+    console.log(this.markers);
   }
 
-  addMarkers(coordsArray: google.maps.LatLngLiteral[]) {
-    this.markers = [...this.markers, ...coordsArray];
+  ngOnInit(): void {
+    this.retrieveHotelOffers();
   }
-  ngOnInit() {
-    this.addMarkers([
-      { lat: 41.3851, lng: 2.1734 },
-      { lat: 41.4002, lng: 2.2005 },
-      { lat: 41.5000, lng: 2.2005 },
-      { lat: 41.6000, lng: 2.2005 },
-      { lat: 41.1000, lng: 2.2005 },
-    ]);
-}
+
+  currentOffer: HotelOfferModel | undefined;
+
+  retrieveHotelOffers() {
+    this.hotelOfferService.getHotelOffers().subscribe((data) => {
+      this.hotelOffers = data;
+      console.log(this.hotelOffers);
+      this.hotelOffers.forEach((offer) => {
+        if (offer.latitude !== undefined && offer.longitude !== undefined) {
+          const lat = parseFloat(offer.latitude);
+          const lng = parseFloat(offer.longitude);
+          if (!isNaN(lat) && !isNaN(lng)) {
+            this.addMarkers({ lat, lng });
+          }
+        }
+      });
+    });
+  }
 }

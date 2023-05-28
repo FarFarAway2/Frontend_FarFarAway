@@ -11,12 +11,36 @@
   opacity: 0.2;
   z-index: -1;
 }
+@font-face {
+  font-family: Abibas;
+  src: url(../../assets/Abibas.ttf);
+}
 
-.card {
+.card-title{
+  font-family: Abibas;
+  font-size: 50px;
+}
+
+.name-ofer{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.card-name, .descri, .btn-group{
+  margin-top: 20px;
+}
+
+.card-up {
   margin-top: 50px;
   background-color: transparent;
-  /* height: auto; */
-  border: 2px solid rgb(194, 194, 194);
+}
+.group-01{
+  margin-top: 37px;
+}
+.group-02 .list-group-item{
+  padding: 9.5px;
+}
+.name-ofer, .card-title{
+  color: rgb(96,9,9);
 }
 
 .incluid {
@@ -29,17 +53,12 @@
 
 .btn-calendar date-range-picker /deep/ .mat-mdc-form-field {
   width: 20vh;
-  /* border: 2px solid grey;
- border-radius: 10px; */
-}
 
-.btn-group {
-  margin-top: 20px;
 }
 
 .btn-increment increment-input /deep/ .mat-mdc-form-field {
   width: 10vh;
-  /* height: 10vh; */
+
 }
 
 .btn-bookit {
@@ -57,3 +76,9 @@
   background-color: transparent;
   border: 1px solid rgb(149, 149, 149);
 }
+.last{
+  margin-top: 110px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+

@@ -33,7 +33,7 @@ const routes: Routes = [
     component: EditOfferComponent,
   },
   {
-    path: 'offerpage',
+    path: 'offerpage/:id_hotel',
     component: OfferPageComponent,
   },
   {

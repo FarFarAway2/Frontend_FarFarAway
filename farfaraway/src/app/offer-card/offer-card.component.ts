@@ -1,10 +1,12 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-offer-card',
   templateUrl: './offer-card.component.html',
   styleUrls: ['./offer-card.component.css'],
 })
+
 export class OfferCardComponent {
   name = 'Default name';
   price = 666;
@@ -12,9 +14,14 @@ export class OfferCardComponent {
   expire_date: any;
   leftTime = 100;
 
-  @Input() hotelOffer: any;
+  constructor(private router: Router) {}
 
-  @Output() hotelData = new EventEmitter<any>();
+  navigateToOfferPage(id_hotel:string): void {
+    console.log(id_hotel);
+    this.router.navigate(['/offerpage',id_hotel]);
+    console.log('hola')
+  }
+  @Input() hotelOffer: any;
 
   ngOnInit(): void {
     this.name = this.hotelOffer.hotel_name;
@@ -22,11 +29,11 @@ export class OfferCardComponent {
     this.description = this.hotelOffer.hotel_description;
     this.expire_date = this.hotelOffer.expire_date;
     this.setLeftTime();
-    this.hotelData.emit({price: this.price, expire_date: this.expire_date})
   }
 
   setLeftTime() {
-    this.leftTime = (new Date(this.expire_date).getTime() - new Date().getTime());
+    console.log(new Date(this.expire_date).getTime() +'/'+ new Date().getTime())
+    this.leftTime = new Date(this.expire_date).getTime() - new Date().getTime();
     console.log(this.leftTime);
   }
 }

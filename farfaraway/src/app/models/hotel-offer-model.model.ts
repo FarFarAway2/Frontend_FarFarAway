@@ -3,4 +3,6 @@ export class HotelOfferModel {
   price?: number;
   hotel_description?: string;
   expire_date?: Date;
+  latitude?: string;
+  longitude?: string;
 }

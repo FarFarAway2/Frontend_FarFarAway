@@ -1,60 +1,48 @@
-<!-- <app-offer-card [hotelOffer]="hotelOffer"></app-offer-card> -->
 <div class="container">
   <!-- top -->
-  <div class="card mb-3">
+  <div class="card-up mb-3">
     <div class="row g-0">
       <div class="col-md-6">
-        <div class="card-body">
+        <div class="card-body card-name">
           <h2 class="card-title">{{name}}</h2>
-          <p class="card-text">{{description}}</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          <p class="card-text descri"><span>{{description}}</span></p>
+          <div class="last">
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 p-3 ">
+      <div class="col-md-6 p-3">
         <mdb-carousel [animation]="'fade'">
           <mdb-carousel-item>
             <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>First slide label</h5> -->
-              <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
             </div>
           </mdb-carousel-item>
           <mdb-carousel-item>
             <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Second slide label</h5> -->
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
-            </div>
-          </mdb-carousel-item>
-          <mdb-carousel-item>
-            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <!-- <h5>Third slide label</h5> -->
-              <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
             </div>
           </mdb-carousel-item>
         </mdb-carousel>
-        <!-- <img src="../../assets/offer01.png" class="img-fluid" alt="..."> -->
       </div>
     </div>
   </div>
   <!-- center -->
   <div class=" mt-5">
     <div class="row">
-      <div class="col-md-6 p-4">
+      <div class="col-md-6 p-4 group-01">
         <ul class="list-group">
           <li class="list-group-item"><strong>{{name}}</strong></li>
-          <li class="list-group-item"><strong>Price: </strong>{{price}} €</li>
-          <li class="list-group-item"><strong>Exp.Date: </strong> {{expire_date}}</li>
-          <li class="list-group-item"><strong>Peoples: </strong> {{number_people}}</li>
-          <li class="list-group-item"><strong>Start Date: </strong> {{start_date}}</li>
+          <li class="list-group-item"><strong>Price: </strong><span class="name-ofer">{{price}} €</span></li>
+          <li class="list-group-item"><strong>Start Date: </strong><span class="name-ofer">{{start_date}}</span></li>
+          <li class="list-group-item"><strong>Exp.Date: </strong><span class="name-ofer">{{expire_date}}</span></li>
         </ul>
       </div>
       <div class="col-md-6 p-4">
         <div class="incluid">
           <h4>This offer includes</h4>
         </div>
-        <ul class="list-group">
+        <ul class="list-group group-02">
           <li class="list-group-item">Available on ALL-INCLUSIVE basis</li>
           <li class="list-group-item">Available from 4 nights of travel</li>
           <li class="list-group-item">Boarding fees</li>

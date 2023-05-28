@@ -25,10 +25,18 @@ export class IndexOffersComponent implements OnInit{
   retrieveHotelOffers() {
     this.hotelOfferService.getHotelOffers().subscribe((data) => {
       this.hotelOffers = data;
-      console.log(this.hotelOffers);
-      this.updateOffers();
+      console.log(this.hotelOffers)
+      this.hotelOffers.forEach((offer) => {
+        if (offer.latitude !== undefined && offer.longitude !== undefined) {
+          this.addMarkers({ lat: offer.latitude, lng: offer.longitude });
+        }
+      });
     });
   }
+  addMarkers(arg0: { lat: string; lng: string; }) {
+    throw new Error('Method not implemented.');
+  }
+
 
   updateOffers(){
     this.name = this.hotelOffers[0].hotel_name;
