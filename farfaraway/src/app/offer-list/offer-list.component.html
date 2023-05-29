@@ -1,19 +1,16 @@
 <div class="container box1">
   <div class="row">
     <div class="col-12 col-sm-6">
-      <h1>Offer list</h1>
+      <h1>Manage your hotels</h1>
     </div>
-    <div class="col-12 col-sm-6">
+    <div class="col-12 col-sm-6 justify-content-right">
       <a class="btn btn-primary button1" href="/createoffer" role="button">Create offer</a>
     </div>
   </div>
   <hr />
   <div class="row">
-    <div class="col-12 col1">
-      <app-offer-card-admin></app-offer-card-admin>
-      <app-offer-card-admin></app-offer-card-admin>
-      <app-offer-card-admin></app-offer-card-admin>
-      <app-offer-card-admin></app-offer-card-admin>
+    <div class="col-md-12 col-lg-6 offers" *ngFor="let offer of hotelOffers">
+      <app-offer-card-admin [hotelOffer]="offer"></app-offer-card-admin>
     </div>
   </div>
 </div>

@@ -21,7 +21,7 @@ const routes: Routes = [
     component: RegisterComponent,
   },
   {
-    path: 'offerlist',
+    path: 'my_hotels',
     component: OfferListComponent,
   },
   {
