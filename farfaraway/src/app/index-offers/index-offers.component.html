@@ -1,4 +1,4 @@
-<app-search-offer></app-search-offer>
+<app-search-offer (filterEvent)="getDestinationOffers($event)"></app-search-offer>
 <div class="container-left">
   <div class="shadow rounded map">
 
@@ -9,8 +9,8 @@
       ></map-marker>
     </google-map>
   </div>
-  <!-- <app-filters class="filters" (filterEvent)="getAllFilteredOffers($event)"></app-filters> -->
-  <app-filters class="filters"></app-filters>
+  <app-filters class="filters" (filterEvent)="filterOffers($event)"></app-filters>
+  <!-- <app-filters class="filters"></app-filters> -->
 </div>
 <div class="container-fluid">
   <div class="row">

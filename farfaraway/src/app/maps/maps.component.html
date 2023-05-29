@@ -1,8 +1,7 @@
 <div class="container-fluid">
   <div class="col-3">
-    <app-filters class="filters"></app-filters>
+    <app-filters class="filters" (filterEvent)="filterOffers($event)"></app-filters>
   </div>
-
   <div class="col">
     <div class="container-fluid">
       <div class="row">
