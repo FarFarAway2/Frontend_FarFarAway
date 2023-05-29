@@ -29,8 +29,7 @@ import { IncrementInputComponent } from './increment-input/increment-input.compo
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { OfferCardTravelComponent } from './offer-card-travel/offer-card-travel.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
     declarations: [
@@ -68,6 +67,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
         HttpClientModule,
         MatDatepickerModule,
         DateRangePickerComponent,
+        MatFormFieldModule,
         MDBBootstrapModule.forRoot(),
     ]
 })

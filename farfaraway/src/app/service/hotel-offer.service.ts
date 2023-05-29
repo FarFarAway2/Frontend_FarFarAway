@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, forkJoin } from 'rxjs';
 import { HotelOfferModel } from '../models/hotel-offer-model.model';
 import { Filter } from '../models/filter';
-import { map, mergeMap } from 'rxjs/operators';
+import { filter, map, mergeMap } from 'rxjs/operators';
 
 const URL = 'https://api-farfaraway-back-production.up.railway.app';
 @Injectable({
@@ -22,7 +22,15 @@ export class HotelOfferService {
     return this.httpClient.get<HotelOfferModel>(URL + '/hoteloffers/' + id);
   }
 
-  getHotelOffersFilterRating(filter: Filter): Observable<HotelOfferModel[]> {
+  getHotelOffersDestination(filter: Filter): Observable<HotelOfferModel[]> {
+    let location: string = '';
+    if(filter.location != undefined){
+     location = filter.location;
+    }
+    return this.httpClient.get<HotelOfferModel[]>(URL + '/hoteloffers/location/' + location);
+  }
+
+  getHotelOffersFiltered(filter: Filter): Observable<HotelOfferModel[]> {
     let ratings: number[] = [];
     if (filter.ratings != undefined) {
       if (filter.ratings.includes(true)) {
@@ -42,33 +50,33 @@ export class HotelOfferService {
     );
   }
 
-  getHotelOffersFilterPrice(filter: Filter): Observable<HotelOfferModel[]> {
-    let prices: number[] = [0, 0];
-    if (filter.priceLow != undefined) {
-      prices[0] = filter.priceLow;
-    }
+  // getHotelOffersFilterPrice(filter: Filter): Observable<HotelOfferModel[]> {
+  //   let prices: number[] = [0, 0];
+  //   if (filter.priceLow != undefined) {
+  //     prices[0] = filter.priceLow;
+  //   }
 
-    if (filter.priceTop != undefined) {
-      prices[1] = filter.priceTop;
-    }
+  //   if (filter.priceTop != undefined) {
+  //     prices[1] = filter.priceTop;
+  //   }
 
-    return this.httpClient.get<HotelOfferModel[]>(
-      URL + '/hoteloffers/price/' + prices
-    );
-  }
-
-  // getHotelOffersFilterSpecialDates(
-  //   filter: Filter
-  // ): Observable<HotelOfferModel[]> {
+  //   return this.httpClient.get<HotelOfferModel[]>(
+  //     URL + '/hoteloffers/price/' + prices
+  //   );
   // }
 
-  getHotelOffersFilterLastOptions(
-    filter: Filter
-  ): Observable<HotelOfferModel[]> {
-    return this.httpClient.get<HotelOfferModel[]>(
-      URL + '/hoteloffers/expiredate'
-    );
-  }
+  // // getHotelOffersFilterSpecialDates(
+  // //   filter: Filter
+  // // ): Observable<HotelOfferModel[]> {
+  // // }
+
+  // getHotelOffersFilterLastOptions(
+  //   filter: Filter
+  // ): Observable<HotelOfferModel[]> {
+  //   return this.httpClient.get<HotelOfferModel[]>(
+  //     URL + '/hoteloffers/expiredate'
+  //   );
+  // }
 
   // getAllFilteredOffers(filter: Filter): Observable<HotelOfferModel[]> {
   //   const offerRatings = this.getHotelOffersFilterRating(filter);
