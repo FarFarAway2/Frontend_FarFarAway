@@ -6,7 +6,8 @@
           <div class="img-offer">
             <img class="card-img-top w-100" [src]="'../assets/Hotel' + id + '.jpg'" alt="Card image cap">
             <div class="top-right shadow rounded">
-              <countdown class="countdown" [config]="{leftTime: leftTime, format:'d'}"></countdown><span> DAYS </span>
+              <!-- <countdown class="countdown" [config]="{leftTime: leftTime, format:'d'}"></countdown><span> DAYS </span> -->
+              <div class="dayNumber mx-1">{{getDaysLeft()}}<span class="dayLetter"> DAYS</span></div>
               <countdown class="countdown" [config]="{leftTime: leftTime, format:'HH:mm:ss'}"></countdown>
             </div>
           </div>
