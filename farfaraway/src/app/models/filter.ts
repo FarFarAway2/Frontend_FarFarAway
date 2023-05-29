@@ -5,4 +5,6 @@ export class Filter {
     themes?: string[] = [];;
     specialDates?: string[] = [];;
     lastOptions?: boolean;
+    location?: string;
+    startDate?: string;
 }
