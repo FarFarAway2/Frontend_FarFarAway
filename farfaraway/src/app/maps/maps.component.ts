@@ -14,6 +14,8 @@ export class MapsComponent implements OnInit {
 
   hotelOffers: HotelOfferModel[] = [];
 
+
+
   constructor(
     private hotelOfferService: HotelOfferService,
     private cd: ChangeDetectorRef
