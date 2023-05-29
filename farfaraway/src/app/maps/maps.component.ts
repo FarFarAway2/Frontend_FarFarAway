@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { HotelOfferService } from '../service/hotel-offer.service';
 import { HotelOfferModel } from '../models/hotel-offer-model.model';
+import { Filter } from '../models/filter';
 
 @Component({
   selector: 'app-maps',
@@ -46,5 +47,24 @@ export class MapsComponent implements OnInit {
         }
       });
     });
+  }
+
+  filterOffers(filter: Filter) {
+    this.hotelOffers.length = 0;
+    this.hotelOfferService
+      .getHotelOffersFiltered(filter)
+      .subscribe((offer: HotelOfferModel[]) => {
+        this.hotelOffers = offer;
+        this.markers.length = 0;
+        this.hotelOffers.forEach((offer) => {
+          if (offer.latitude !== undefined && offer.longitude !== undefined) {
+            const lat = parseFloat(offer.latitude);
+            const lng = parseFloat(offer.longitude);
+            if (!isNaN(lat) && !isNaN(lng)) {
+              this.addMarkers({ lat, lng });
+            }
+          }
+        });
+      });
   }
 }
