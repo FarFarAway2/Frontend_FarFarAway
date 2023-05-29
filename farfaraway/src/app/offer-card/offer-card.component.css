@@ -3,34 +3,18 @@
   padding: 0px;
 }
 
-/*.button1 {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 2px;
-  font-weight: 500;
+.dayNumber {
   color: white;
-  background-color: #2bca55;
-  border-color: #2bca55;
+  font-size: 19px;
+  font-weight: bold;
 }
 
-.button1:hover {
-  background-color: #24ab48;
-  border-color: #24ab48;
+.dayLetter {
+  color: white;
 }
-
-.button1:active {
-  color: black;
-  background-color: #168734;
-  border-color: #168734;
-}
-
-.image1 {
-  height: 200px;
-}*/
 
 .img-offer {
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -49,15 +33,15 @@
 }
 
 .card-img-top {
-  -webkit-transition:all .4s linear;
-  transition:all .4s linear;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
 
 }
 
 .card:hover img {
-  -ms-transform:scale(1.1);
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .col-4 {
@@ -75,8 +59,18 @@
   background-color: #770004;
 }
 
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

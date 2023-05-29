@@ -6,7 +6,6 @@ import { Router } from '@angular/router';
   templateUrl: './offer-card.component.html',
   styleUrls: ['./offer-card.component.css'],
 })
-
 export class OfferCardComponent {
   id = 0;
   name = 'Default name';
@@ -17,8 +16,8 @@ export class OfferCardComponent {
 
   constructor(private router: Router) {}
 
-  navigateToOfferPage(id_hotel:string): void {
-    this.router.navigate(['/book',id_hotel]);
+  navigateToOfferPage(id_hotel: string): void {
+    this.router.navigate(['/book', id_hotel]);
   }
 
   @Input() hotelOffer: any;
@@ -33,12 +32,23 @@ export class OfferCardComponent {
   }
 
   setLeftTime() {
-    // console.log(new Date(this.expire_date).getTime() +'/'+ new Date().getTime())
-    this.leftTime = new Date(this.expire_date).getTime() - new Date().getTime();
-    // console.log(this.leftTime);
+    const currentTime = new Date().getTime();
+    const expirationTime = new Date(this.expire_date).getTime();
+
+    this.leftTime = Math.floor((expirationTime - currentTime) / 1000);
+
+    if (this.leftTime < 0) {
+      this.leftTime = 0;
+    }
+  }
+  getDaysLeft() {
+    let timeDiff = Math.abs(
+      new Date(this.expire_date).getTime() - new Date().getTime()
+    );
+    let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    return diffDays;
   }
 
-  // Función para codificar la ruta
   codificarRuta(ruta: string): string {
     return encodeURIComponent(ruta).replace(/%20/g, '_');
   }

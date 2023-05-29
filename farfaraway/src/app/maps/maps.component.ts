@@ -10,7 +10,7 @@ import { Filter } from '../models/filter';
 })
 export class MapsComponent implements OnInit {
   zoom = 9;
-  center: google.maps.LatLngLiteral = { lat: 39.600, lng: 1.300 };
+  center: google.maps.LatLngLiteral = { lat: 41.0, lng: 1.3 };
   markers: google.maps.LatLngLiteral[] = [];
 
   hotelOffers: HotelOfferModel[] = [];
